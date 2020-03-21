@@ -2,10 +2,10 @@
  
 class SingletonPDO extends PDO
 {
-    private static $instance = null;    // pointeur vers l'objet SingletonPDO instancié dans getInstance()
+    private static $instance = null;    // pointeur vers l'objet SingletonPDO instancié dans getInstance(), null par défaut
   
     const DEFAULT_SQL_HOST = 'localhost';
-    const DEFAULT_SQL_DBN  = 'p41';
+    const DEFAULT_SQL_DBN  = 'pwd3_tp1';
     const DEFAULT_SQL_USER = 'root';
     const DEFAULT_SQL_PASS = '';
 

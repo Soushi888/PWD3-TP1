@@ -1,6 +1,7 @@
 <?php
 
-require_once('includes/chargementClasses.inc.php');
+require_once('includes/Autoloader.class.php');
+Autoloader::register();
 
 header("Access-Control-Allow-Origin: *");
 

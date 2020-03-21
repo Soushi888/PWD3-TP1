@@ -24,7 +24,8 @@ class Controleur {
     const ERROR_PWD       = "HTTP 401";
     const ERROR_METHOD    = "HTTP 405";
 
-    public function __construct() {        
+    public function __construct() {
+        
         /*  Routage des requêtes
             en fonction de l'uri et de la méthode (GET, POST, PUT ou DELETE)
             ---------------------------------------------------------------- */
@@ -32,10 +33,6 @@ class Controleur {
         $this->ressource = isset($_GET['ressource']) ? $_GET['ressource'] : '';
         $this->id        = isset($_GET['id'])        ? $_GET['id'] : '';
         $this->action    = isset($_GET['action'])    ? $_GET['action'] : '';
-
-        // echo "ressource ".$this->ressource."<br>";
-        // echo "id "       .$this->id."<br>";
-        // echo "action "   .$this->action."<br>";
 
         $uriRequest = '';
         if ($this->ressource !== '') $uriRequest .= $this->ressource;
@@ -114,7 +111,16 @@ class Controleur {
      */
     private function postLivre()
     {
-        // Coder
+        $req = new RequetesPDO();
+        // Trace::writeLog(print_r(json_decode($_POST['livre']), true));
+        $livre = (array) json_decode($_POST['livre']); // ou : $livre = json_decode($_POST['livre'], true); 
+        $oLivre = new livre(...array_values($livre));
+        if (count($oLivre->erreurs) === 0) { 
+            $codeRetour = $req->ajouterLivre(...array_values($livre));
+            echo json_encode($codeRetour);
+        } else {
+            echo json_encode(["erreurs de données" => $oLivre->erreurs]);
+        }
     }
 
     /**
@@ -124,9 +130,26 @@ class Controleur {
      */
     private function putLivre()
     {
-        // Coder
+        $req = new RequetesPDO();
+        $livre = $req->getLivre($this->id);
+        if ($livre === false) {
+            echo json_encode(["code" => false]);   
+        } else {
+            $livreActuel = $livre;
+            $livre = (array) json_decode(file_get_contents("php://input")); // ou : $livre = json_decode(file_get_contents("php://input"), true); 
+            array_shift($livreActuel); // pour enlever le champ id
+            $oLivre = new Livre(...array_values($livreActuel));
+            foreach ($livre as $key => $value) {
+                if (!is_null($value)) $oLivre->$key = $value;
+            }
+            if (count($oLivre->erreurs) === 0) { 
+                $codeRetour = $req->modifierLivre($this->id, ...array_values($livre));
+                echo json_encode($codeRetour);
+            } else {
+                echo json_encode(["erreurs de données" => $oLivre->erreurs]);
+            }
+        }
     }
-
 
     /**
      * Supprimer le Livre d'id $_GET['id']
@@ -135,7 +158,9 @@ class Controleur {
      */
     private function deleteLivre()
     {
-        // Coder
+        $req = new RequetesPDO();
+        $codeRetour = $req->supprimerLivre($this->id);
+        echo json_encode($codeRetour);
     }
 
     /* Traitement des erreurs avec l'envoi d'un code HTTP

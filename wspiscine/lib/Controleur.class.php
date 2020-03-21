@@ -114,7 +114,7 @@ class Controleur {
         $req = new RequetesPDO();
         // Trace::writeLog(print_r(json_decode($_POST['livre']), true));
         $livre = (array) json_decode($_POST['livre']); // ou : $livre = json_decode($_POST['livre'], true); 
-        $oLivre = new livre(...array_values($livre));
+        $oLivre = new Piscine(...array_values($livre));
         if (count($oLivre->erreurs) === 0) { 
             $codeRetour = $req->ajouterLivre(...array_values($livre));
             echo json_encode($codeRetour);
@@ -138,7 +138,7 @@ class Controleur {
             $livreActuel = $livre;
             $livre = (array) json_decode(file_get_contents("php://input")); // ou : $livre = json_decode(file_get_contents("php://input"), true); 
             array_shift($livreActuel); // pour enlever le champ id
-            $oLivre = new Livre(...array_values($livreActuel));
+            $oLivre = new Piscine(...array_values($livreActuel));
             foreach ($livre as $key => $value) {
                 if (!is_null($value)) $oLivre->$key = $value;
             }

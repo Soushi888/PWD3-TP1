@@ -1,7 +1,7 @@
 <?php
 
 $path = "http://localhost/wspiscine/";
-// $path = "https://cjouhannet.webdev.cmaisonneuve.qc.ca/wspiscine/";
+// $path = "https://cmaisonneuve.sacha-pignot.website/wspiscine/";
 
 $tests = array(
     array(

@@ -1,7 +1,7 @@
 
 RewriteEngine On
 
-RewriteBase /p41/
+RewriteBase /pwd3-tp1/wspiscine
 
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 

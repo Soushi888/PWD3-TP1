@@ -1,115 +1,115 @@
 <?php
 
-$path = "http://localhost/wspiscine/";
-// $path = "https://cmaisonneuve.sacha-pignot.website/wspiscine/";
+const PATH = "http://localhost/wspiscine/";
+// const PATH = "https://cmaisonneuve.sacha-pignot.website/wspiscine/";
 
 $tests = array(
     array(
-        "url"       => $path . "arrondissements",
+        "url"       => PATH . "arrondissements",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "arrondissements",
+        "url"       => PATH . "arrondissements",
         "action"    => "POST",
         "login"     =>  "582P41:badpassword",
         "horaires"  => array()
     ),
     array(
-        "url"       => $path . "arrondissements",
+        "url"       => PATH . "arrondissements",
         "action"    => "POST",
         "login"     =>  "582P41:ABC123",
         "horaires"  => array()
     ),
     array(
-        "url"       => $path . "arrondissements/10",
+        "url"       => PATH . "arrondissements/10",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "arrondissements/ANJ",
+        "url"       => PATH . "arrondissements/ANJ",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "arrondissements/XXX",
+        "url"       => PATH . "arrondissements/XXX",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "piscines",
+        "url"       => PATH . "piscines",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "piscines",
+        "url"       => PATH . "piscines",
         "action"    => "POST",
         "login"     =>  "582P41:ABC123",
         "horaires"  => array()
     ),
     array(
-        "url"       => $path . "piscines?code3l=OUT",
+        "url"       => PATH . "piscines?code3l=OUT",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "arrondissements/OUT/piscines",
+        "url"       => PATH . "arrondissements/OUT/piscines",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "piscines?code3l=XXX",
+        "url"       => PATH . "piscines?code3l=XXX",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "arrondissements/XXX/piscines",
+        "url"       => PATH . "arrondissements/XXX/piscines",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "piscines/10",
+        "url"       => PATH . "piscines/10",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "piscines/10",
+        "url"       => PATH . "piscines/10",
         "action"    => "POST",
         "login"     =>  "582P41:ABC123",
         "horaires"  => array()
     ),
     array(
-        "url"       => $path . "piscines/100",
+        "url"       => PATH . "piscines/100",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "piscines/10/xxx",
+        "url"       => PATH . "piscines/10/xxx",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "piscines/1/horaires",
+        "url"       => PATH . "piscines/1/horaires",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "piscines/100/horaires",
+        "url"       => PATH . "piscines/100/horaires",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "piscines/1/horaires?date=20180503",
+        "url"       => PATH . "piscines/1/horaires?date=20180503",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "piscines/1/horaires?date=XXX",
+        "url"       => PATH . "piscines/1/horaires?date=XXX",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "piscines/1/horaires",
+        "url"       => PATH . "piscines/1/horaires",
         "action"    => "POST",
         "login"     => "582P41:badpassword",
         "horaires"  => array(
@@ -128,7 +128,7 @@ $tests = array(
         )
     ),
     array(
-        "url"       => $path . "piscines/1/horaires",
+        "url"       => PATH . "piscines/1/horaires",
         "action"    => "POST",
         "login"     =>  "582P41:ABC123",
         "horaires"  => array(
@@ -147,7 +147,7 @@ $tests = array(
         )
     ),
     array(
-        "url"       => $path . "piscines/1/horaires",
+        "url"       => PATH . "piscines/1/horaires",
         "action"    => "POST",
         "login"     =>  "582P41:ABC123",
         "horaires"  => array(
@@ -166,7 +166,7 @@ $tests = array(
         )
     ),
     array(
-        "url"       => $path . "piscines/1/horaires",
+        "url"       => PATH . "piscines/1/horaires",
         "action"    => "POST",
         "login"     =>  "582P41:ABC123",
         "horaires"  => array(
@@ -185,27 +185,27 @@ $tests = array(
         )
     ),
     array(
-        "url"       => $path . "piscines/1/horaires",
+        "url"       => PATH . "piscines/1/horaires",
         "action"    => "GET",
         "login"     =>  ""
     ),
     array(
-        "url"       => $path . "piscines/1/horaires",
+        "url"       => PATH . "piscines/1/horaires",
         "action"    => "DELETE",
         "login"     =>  "baduser:badpassword"
     ),
     array(
-        "url"       => $path . "arrondissements",
+        "url"       => PATH . "arrondissements",
         "action"    => "DELETE",
         "login"     =>  "582P41:ABC123"
     ),
     array(
-        "url"       => $path . "piscines/1/horaires",
+        "url"       => PATH . "piscines/1/horaires",
         "action"    => "DELETE",
         "login"     =>  "582P41:ABC123"
     ),
     array(
-        "url"       => $path . "piscines/1/horaires",
+        "url"       => PATH . "piscines/1/horaires",
         "action"    => "POST",
         "login"     =>  "582P41:ABC123",
         "horaires"  => array(
@@ -224,7 +224,7 @@ $tests = array(
         )
     ),
     array(
-        "url"       => $path . "piscines/1/horaires",
+        "url"       => PATH . "piscines/1/horaires",
         "action"    => "GET",
         "login"     =>  ""
     )

@@ -5,7 +5,7 @@
 DROP TABLE IF EXISTS horaire;
 CREATE TABLE horaire (
   id_piscine int(10)    UNSIGNED NOT NULL,
-  jour       tinyint(3) UNSIGNED NOT NULL COMMENT 'dim =0, sam =6',
+  jour       tinyint(3) UNSIGNED NOT NULL COMMENT 'dim = 0, sam = 6',
   debut      time                NOT NULL,
   fin        time                NOT NULL,
   PRIMARY KEY (id_piscine, jour),

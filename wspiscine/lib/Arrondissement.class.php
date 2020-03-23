@@ -17,9 +17,9 @@ class Piscine
      *
      */ 
     public function __construct($code = null, $nom = null, $accronyme = 0) {
-        $this->setcode($code);
-        $this->setnom($nom);
-        $this->setaccronyme($accronyme);
+        $this->setCode($code);
+        $this->setNom($nom);
+        $this->setAccronyme($accronyme);
     }
     
     /**
@@ -117,12 +117,12 @@ class Piscine
      * @return this
      */        
     public function setaccronyme($accronyme = 0) {
-        // unset($this->erreurs['accronyme']);
-        // if (preg_match('/^\d{4}$/', $accronyme) && $accronyme > self::accronyme_MINI && $accronyme <= date('Y')) {
-        //     // $this->accronyme = $accronyme;
-        // } else {
-        //     $this->erreurs['accronyme'] = true;
-        // }
-        // return $this;
+        unset($this->erreurs['accronyme']);
+        if (preg_match('/^\d{4}$/', $accronyme) && $accronyme > self::accronyme_MINI && $accronyme <= date('Y')) {
+            $this->accronyme = $accronyme;
+        } else {
+            $this->erreurs['accronyme'] = true;
+        }
+        return $this;
     }
 }

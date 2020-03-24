@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Classe Piscine de l'entité piscine
+ * Classe Arrondissement de l'entité Arrondissement
  *
  */
-class Piscine
+class Arrondissement
 {
     private $code;
     private $nom;
@@ -37,7 +37,7 @@ class Piscine
      *
      * @return string
      */ 
-    public function getcode() {
+    public function getCode() {
         return $this->code;
     }
     
@@ -46,7 +46,7 @@ class Piscine
      *
      * @return string
      */ 
-    public function getnom() {
+    public function getNom() {
         return $this->nom;
     }
  
@@ -55,7 +55,7 @@ class Piscine
      *
      * @return int
      */ 
-    public function getaccronyme() {
+    public function getAccronyme() {
         return $this->accronyme;
     }
 
@@ -65,7 +65,7 @@ class Piscine
      * @return string
      */ 
     public function __toString() {
-        return "Le Piscine \"".$this->code."\" de l'nom ".$this->nom." publié en ".$this->accronyme; 
+        return "L'Arrondissement ".$this->code. " - " .$this->nom." publié en ".$this->accronyme; 
     }
         
     /**
@@ -82,7 +82,7 @@ class Piscine
      *
      * @return this
      */    
-    public function setcode($code = null) {
+    public function setCode($code = null) {
         unset($this->erreurs['code']);
         $code = trim($code);
 		$regExp = '/^\S+.*$/'; // au moins un caractère éditable
@@ -99,7 +99,7 @@ class Piscine
      *
      * @return this
      */    
-    public function setnom($nom = null) {
+    public function setNom($nom = null) {
         unset($this->erreurs['nom']);
         $nom = trim($nom);
         $regExp = '/^[a-zA-ZéèêëïôÉ]{2,}([- ][a-zA-ZéèêëïôÉ]{2,})*$/'; // au moins 2 caractères alphabétiques
@@ -116,13 +116,13 @@ class Piscine
      *
      * @return this
      */        
-    public function setaccronyme($accronyme = 0) {
+    public function setAccronyme($accronyme = 0) {
         unset($this->erreurs['accronyme']);
-        if (preg_match('/^\d{4}$/', $accronyme) && $accronyme > self::accronyme_MINI && $accronyme <= date('Y')) {
-            $this->accronyme = $accronyme;
-        } else {
-            $this->erreurs['accronyme'] = true;
-        }
+        // if (preg_match('/^\d{4}$/', $accronyme) && $accronyme > self::accronyme_MINI && $accronyme <= date('Y')) {
+        //     $this->accronyme = $accronyme;
+        // } else {
+        //     $this->erreurs['accronyme'] = true;
+        // }
         return $this;
     }
 }

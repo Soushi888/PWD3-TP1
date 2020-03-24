@@ -1,4 +1,5 @@
-<?php 
+<?php
+
 /**
  * Class Autoloader :
  * Charge les classes dynamiquement.
@@ -11,21 +12,20 @@ class Autoloader
      */
     public static function register()
     {
-        spl_autoload_register([__CLASS__, "autoload"]);
+        spl_autoload_register([__CLASS__, 'chargerClasse']);
     }
 
+
+     
     /**
-     * @param string $class
+     * chargerClasse
      * 
+     * 
+     * @param  string $classe
      * @return void
      */
-    public static function autoload($class)
+    public static function chargerClasse($classe)
     {
-        if (strpos($class, __NAMESPACE__ . "\\") === 0) {
-            $class = str_replace(__NAMESPACE__ . '\\', '', $class);
-            require("class\\" . $class . ".class.php");
-        }
+        require_once("./lib/" . $classe . '.class.php');
     }
 }
-
-?>

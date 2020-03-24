@@ -51,7 +51,7 @@ class Controleur
                         if ($methode === $_SERVER['REQUEST_METHOD']) {
 
                             if ($methode !== 'GET' && !$this->validerUtilisateur($_SERVER['PHP_AUTH_USER'], $_SERVER['PHP_AUTH_PW'])) {
-                                throw new Exception(self::ERROR_PWD);
+                                throw new Exception(self::ERROR_AUTH);
                             }
 
                             $this->$fonction();
@@ -181,7 +181,7 @@ class Controleur
         $message = '';
         if ($erreur == self::ERROR_RESSOURCE) {
             header('HTTP/1.1 400 Bad Request');
-        } elseif ($erreur == self::ERROR_PWD) {
+        } elseif ($erreur == self::ERROR_AUTH) {
             header('HTTP/1.1 401 Unauthorized');
         } elseif ($erreur == self::ERROR_METHOD) {
             header('HTTP/1.1 405 Method Not Allowed');

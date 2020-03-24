@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Classe Arrondissement de l'entité Arrondissement
+ * Classe Piscine de l'entité piscine
  *
  */
-class Arrondissement
+class Piscine
 {
     private $code;
     private $nom;
@@ -17,9 +17,9 @@ class Arrondissement
      *
      */ 
     public function __construct($code = null, $nom = null, $accronyme = 0) {
-        $this->setCode($code);
-        $this->setNom($nom);
-        $this->setAccronyme($accronyme);
+        $this->setcode($code);
+        $this->setnom($nom);
+        $this->setaccronyme($accronyme);
     }
     
     /**
@@ -37,7 +37,7 @@ class Arrondissement
      *
      * @return string
      */ 
-    public function getCode() {
+    public function getcode() {
         return $this->code;
     }
     
@@ -46,7 +46,7 @@ class Arrondissement
      *
      * @return string
      */ 
-    public function getNom() {
+    public function getnom() {
         return $this->nom;
     }
  
@@ -55,7 +55,7 @@ class Arrondissement
      *
      * @return int
      */ 
-    public function getAccronyme() {
+    public function getaccronyme() {
         return $this->accronyme;
     }
 
@@ -65,7 +65,7 @@ class Arrondissement
      * @return string
      */ 
     public function __toString() {
-        return "Arrondissement ".$this->code. " - " .$this->nom."<br>".$this->accronyme; 
+        return "Le Piscine \"".$this->code."\" de l'nom ".$this->nom." publié en ".$this->accronyme; 
     }
         
     /**
@@ -82,10 +82,10 @@ class Arrondissement
      *
      * @return this
      */    
-    public function setCode($code = null) {
+    public function setcode($code = null) {
         unset($this->erreurs['code']);
         $code = trim($code);
-		$regExp = '/^[a-zA-Z]{3}$/'; // au moins un caractère éditable
+		$regExp = '/^\S+.*$/'; // au moins un caractère éditable
         if ($code !== null &&  preg_match($regExp, $code)) { 
             $this->code = $code;
         } else {
@@ -99,11 +99,10 @@ class Arrondissement
      *
      * @return this
      */    
-    public function setNom($nom = null) {
+    public function setnom($nom = null) {
         unset($this->erreurs['nom']);
         $nom = trim($nom);
-        $regExp = "/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/"; // au moins 1 caractères alphabétiques
-
+        $regExp = '/^[a-zA-ZéèêëïôÉ]{2,}([- ][a-zA-ZéèêëïôÉ]{2,})*$/'; // au moins 2 caractères alphabétiques
         if ($nom !== null && preg_match($regExp, $nom)) {
             $this->nom = ucwords(strtolower($nom));
         } else {
@@ -117,13 +116,13 @@ class Arrondissement
      *
      * @return this
      */        
-    public function setAccronyme($accronyme = 0) {
-        unset($this->erreurs['accronyme']);
-        if (preg_match('/^[a-zA-Z]{3}$/', $accronyme)) {
-            $this->accronyme = $accronyme;
-        } else {
-            $this->erreurs['accronyme'] = true;
-        }
-        return $this;
+    public function setaccronyme($accronyme = 0) {
+        // unset($this->erreurs['accronyme']);
+        // if (preg_match('/^\d{4}$/', $accronyme) && $accronyme > self::accronyme_MINI && $accronyme <= date('Y')) {
+        //     // $this->accronyme = $accronyme;
+        // } else {
+        //     $this->erreurs['accronyme'] = true;
+        // }
+        // return $this;
     }
 }

@@ -7,79 +7,65 @@
 class RequetesPDO {
     
     /**
-     * Récupération de tous les livres de la table livre  
+     * Récupération de tous les arrindissements de la table arrondissement  
      *
      * @return array
      */ 
-    public function getLivres()
+    public function getArrondissements()
     {
         $sPDO = SingletonPDO::getInstance();
 
         // Avec une requête non préparée
         // =============================
         $oPDOStatement = $sPDO->query(
-            'SELECT id, titre, auteur, annee FROM livre ORDER BY id ASC'
+            'SELECT * FROM arrondissement ORDER BY nom ASC'
         );
 
         // Avec une requête préparée
         // =========================
         // $oPDOStatement = $sPDO->prepare(
-        //     'SELECT id, titre, auteur, annee FROM livre ORDER BY id ASC'
+        //     'SELECT id, titre, auteur, annee FROM arrondissement ORDER BY id ASC'
         //   );
         // $oPDOStatement->execute();
 
-        $livres = $oPDOStatement->fetchAll(PDO::FETCH_ASSOC);
-        return $livres;
+        $arrondissement = $oPDOStatement->fetchAll(PDO::FETCH_ASSOC);
+        return $arrondissement;
     }
 
     /**
-     * Récupération d'un livre de la table livre à partir de son id 
+     * Récupération d'un arrondissement de la table arrondissement à partir de son id (code3l)
      *
      * @return array or boolean false if no result
      */ 
-    public function getLivre($id)
+    public function getArrondissement($id)
     {
         $sPDO = SingletonPDO::getInstance();
         $oPDOStatement = $sPDO->prepare(
-            'SELECT id, titre, auteur, annee FROM livre WHERE id = :id'
+            'SELECT * FROM arrondissement WHERE code3l = :id'
             );
         $oPDOStatement->bindParam(':id', $id);
         $oPDOStatement->execute();
-        $livre = $oPDOStatement->fetch(PDO::FETCH_ASSOC);
-        return $livre;    
+        $arrondissement = $oPDOStatement->fetch(PDO::FETCH_ASSOC);
+        return $arrondissement;    
     }
     
-    /**
-     * Récupération des livres de la table livre pour l'année fournie en paramètre 
-     *
-     * @return array
-     */ 
-    public function chercherAnnee($annee)
-    {
-        $sPDO = SingletonPDO::getInstance();
-        $oPDOStatement = $sPDO->prepare(
-            'SELECT id, titre, auteur, annee FROM livre WHERE annee = :annee ORDER BY titre DESC'
-            );
-        $oPDOStatement->bindParam(':annee', $annee);
-        $oPDOStatement->execute();
-        $livres = $oPDOStatement->fetchAll(PDO::FETCH_ASSOC);
-        return $livres;          
-    }
+    
 
     /**
-     * Ajout d'un livre dans la table livre 
+     * Ajout d'un horaire dans la table horaire 
      *
      * @return boolean
      */ 
-    public function ajouterLivre($titre, $auteur, $annee)
+    public function ajouterHoraire($id_piscine, $jour, $debut, $fin)
     {
         $sPDO = SingletonPDO::getInstance();
         $oPDOStatement = $sPDO->prepare(
-            'INSERT INTO livre SET titre=:titre, auteur=:auteur, annee=:annee;'
+            'INSERT INTO horaire SET id_piscine=:id_piscine, jour=:jour, debut=:debut, fin=:fin;'
             );
-        $oPDOStatement->bindParam(':titre', $titre);
-        $oPDOStatement->bindParam(':auteur', $auteur);
-        $oPDOStatement->bindParam(':annee', $annee);
+        $oPDOStatement->bindParam(':id_piscine', $id_piscine);
+        $oPDOStatement->bindParam(':jour', $jour);
+        $oPDOStatement->bindParam(':debut', $debut);
+        $oPDOStatement->bindParam(':fin', $fin);
         $oPDOStatement->execute();
         if ($oPDOStatement->rowCount() == 0) {
             return false;
@@ -88,47 +74,17 @@ class RequetesPDO {
     }
 
     /**
-     * Modification d'un livre dans la table livre à partir de son id 
+     * Suppression d'un horaire dans la table horaire à partir de son id 
      *
      * @return boolean
      */ 
-    public function modifierLivre($id, $titre=null, $auteur=null, $annee=null)
-    {
-        $sPDO = SingletonPDO::getInstance();
-        if ($titre != null || $auteur != null ||  $annee != null) {
-            $items = '';
-            if ($titre  != null) $items .= 'titre=:titre,';
-            if ($auteur != null) $items .= 'auteur=:auteur,'; 
-            if ($annee  != null) $items .= 'annee=:annee,';
-            $items = rtrim($items, ',');
-            $oPDOStatement = $sPDO->prepare(
-                'UPDATE livre SET '.$items.' WHERE id=:id;'
-                );
-            $oPDOStatement->bindParam(':id', $id);
-            if ($titre  != null) $oPDOStatement->bindParam(':titre', $titre);
-            if ($auteur != null) $oPDOStatement->bindParam(':auteur', $auteur);
-            if ($annee  != null) $oPDOStatement->bindParam(':annee', $annee);
-            $oPDOStatement->execute();
-            if ($oPDOStatement->rowCount() == 0) {
-                return false;
-            }
-            return true;
-        }
-        return false;
-    }
-
-    /**
-     * Suppression d'un livre dans la table livre à partir de son id 
-     *
-     * @return boolean
-     */ 
-    public function supprimerLivre($id)
+    public function supprimerHoraire($id_piscine)
     {
         $sPDO = SingletonPDO::getInstance();
         $oPDOStatement = $sPDO->prepare(
-            'DELETE FROM livre WHERE id=:id;'
+            'DELETE FROM horaire WHERE id_piscine=:id_piscine;'
             );
-        $oPDOStatement->bindParam(':id', $id);
+        $oPDOStatement->bindParam(':id_piscine', $id_piscine);
         $oPDOStatement->execute();
         if ($oPDOStatement->rowCount() == 0) {
             return false;

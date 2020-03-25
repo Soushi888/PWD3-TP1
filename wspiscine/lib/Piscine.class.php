@@ -147,7 +147,7 @@ class Piscine
     {
         unset($this->erreurs['type']);
         $type = trim($type);
-        $regExp = "/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]$/"; // au moins 2 caractères alphabétiques
+        $regExp = "/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/"; // au moins 1 caractères alphabétiques
         if ($type !== null && preg_match($regExp, $type)) {
             $this->type = ucwords(strtolower($type));
         } else {
@@ -184,7 +184,7 @@ class Piscine
     {
         unset($this->erreurs['arrondissement_code3l']);
         $arrondissement_code3l = trim($arrondissement_code3l);
-		$regExp = '/^[a-zA-Z]{3}$/'; // 3 lettres minuscules ou majuscules
+		$regExp = "/^[\w]+[0-9a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,}$/"; // au moins 1 caractères alphabnumérique suivi d'autres caractères.
         if ($arrondissement_code3l !== null &&  preg_match($regExp, $arrondissement_code3l)) { 
             $this->arrondissement_code3l = strtoupper($arrondissement_code3l);
             $this->arrondissement_code3l = $arrondissement_code3l;
@@ -203,7 +203,7 @@ class Piscine
     {
         unset($this->erreurs['adresse']);
         $adresse = trim($adresse);
-        $regExp = '/^\S+.*$/'; // au moins un caractère éditable
+		$regExp = "/^[\w]+[0-9a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,}$/"; // au moins 1 caractères alphabnumérique suivi d'autres caractères.
         if ($adresse !== null &&  preg_match($regExp, $adresse)) {
             $this->adresse = $adresse;
         } else {
@@ -221,6 +221,7 @@ class Piscine
     {
         unset($this->erreurs['propriete']);
         $propriete = trim($propriete);
+		$regExp = "/^[\w]+[0-9a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,}$/"; // au moins 1 caractères alphabnumérique suivi d'autres caractères.
         $regExp = '/^\S+.*$/'; // au moins un caractère éditable
         if ($propriete !== null &&  preg_match($regExp, $propriete)) {
             $this->propriete = $propriete;
@@ -239,7 +240,7 @@ class Piscine
     {
         unset($this->erreurs['gestion']);
         $gestion = trim($gestion);
-        $regExp = '/^\S+.*$/'; // au moins un caractère éditable
+		$regExp = "/^[\w]+[0-9a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,}$/"; // au moins 1 caractères alphabnumérique suivi d'autres caractères.
         if ($gestion !== null &&  preg_match($regExp, $gestion)) {
             $this->gestion = $gestion;
         } else {

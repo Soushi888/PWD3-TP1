@@ -149,7 +149,7 @@ class Piscine
         $type = trim($type);
         $regExp = "/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/"; // au moins 1 caractères alphabétiques
         if ($type !== null && preg_match($regExp, $type)) {
-            $this->type = ucwords(strtolower($type));
+            $this->type = ucfirst(strtolower($type));
         } else {
             $this->erreurs['type'] = true;
         }
@@ -205,7 +205,7 @@ class Piscine
         $adresse = trim($adresse);
 		$regExp = "/^[\w]+[0-9a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,}$/"; // au moins 1 caractères alphabnumérique suivi d'autres caractères.
         if ($adresse !== null &&  preg_match($regExp, $adresse)) {
-            $this->adresse = $adresse;
+            $this->adresse = ucfirst(strtolower($adresse));
         } else {
             $this->erreurs['adresse'] = true;
         }
@@ -224,7 +224,7 @@ class Piscine
 		$regExp = "/^[\w]+[0-9a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,}$/"; // au moins 1 caractères alphabnumérique suivi d'autres caractères.
         $regExp = '/^\S+.*$/'; // au moins un caractère éditable
         if ($propriete !== null &&  preg_match($regExp, $propriete)) {
-            $this->propriete = $propriete;
+            $this->propriete = ucfirst(strtolower($propriete));
         } else {
             $this->erreurs['propriete'] = true;
         }
@@ -242,7 +242,7 @@ class Piscine
         $gestion = trim($gestion);
 		$regExp = "/^[\w]+[0-9a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,}$/"; // au moins 1 caractères alphabnumérique suivi d'autres caractères.
         if ($gestion !== null &&  preg_match($regExp, $gestion)) {
-            $this->gestion = $gestion;
+            $this->gestion = ucfirst(strtolower($gestion));
         } else {
             $this->erreurs['gestion'] = true;
         }

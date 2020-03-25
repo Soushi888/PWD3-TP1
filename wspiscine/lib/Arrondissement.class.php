@@ -6,7 +6,7 @@
  */
 class Arrondissement
 {
-    private $code;
+    private $code3l;
     private $nom;
     private $accronyme;
     
@@ -16,8 +16,8 @@ class Arrondissement
      * Constructeur de la classe 
      *
      */ 
-    public function __construct($code = null, $nom = null, $accronyme = 0) {
-        $this->setCode($code);
+    public function __construct($code3l = null, $nom = null, $accronyme = 0) {
+        $this->setcode3l($code3l);
         $this->setNom($nom);
         $this->setAccronyme($accronyme);
     }
@@ -33,12 +33,12 @@ class Arrondissement
     
 
     /**
-     * Accesseur de la propriété code 
+     * Accesseur de la propriété code3l 
      *
      * @return string
      */ 
-    public function getCode() {
-        return $this->code;
+    public function getcode3l() {
+        return $this->code3l;
     }
     
     /**
@@ -65,7 +65,7 @@ class Arrondissement
      * @return string
      */ 
     public function __toString() {
-        return "Arrondissement ".$this->code. " - " .$this->nom."<br>".$this->accronyme; 
+        return "Arrondissement ".$this->code3l. " - " .$this->nom."<br>".$this->accronyme; 
     }
         
     /**
@@ -78,18 +78,18 @@ class Arrondissement
     }
     
     /**
-     * Mutateur de la propriété code 
+     * Mutateur de la propriété code3l 
      *
      * @return this
      */    
-    public function setCode($code = null) {
-        unset($this->erreurs['code']);
-        $code = trim($code);
+    public function setCode3l($code3l = null) {
+        unset($this->erreurs['code3l']);
+        $code3l = trim($code3l);
 		$regExp = '/^[a-zA-Z]{3}$/'; // au moins un caractère éditable
-        if ($code !== null &&  preg_match($regExp, $code)) { 
-            $this->code = $code;
+        if ($code3l !== null &&  preg_match($regExp, $code3l)) { 
+            $this->code3l = strtoupper($code3l);
         } else {
-            $this->erreurs['code'] = true;
+            $this->erreurs['code3l'] = true;
         }
         return $this;
     }    
@@ -120,7 +120,7 @@ class Arrondissement
     public function setAccronyme($accronyme = 0) {
         unset($this->erreurs['accronyme']);
         if (preg_match('/^[a-zA-Z]{3}$/', $accronyme)) {
-            $this->accronyme = $accronyme;
+            $this->accronyme = strtoupper($accronyme);
         } else {
             $this->erreurs['accronyme'] = true;
         }

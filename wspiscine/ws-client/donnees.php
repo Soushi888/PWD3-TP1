@@ -1,6 +1,6 @@
 <?php
 
-const PATH = "http://localhost/wspiscine/";
+const PATH = "http://localhost/pwd3-tp1/wspiscine/";
 // const PATH = "https://cmaisonneuve.sacha-pignot.website/wspiscine/";
 
 $tests = array(

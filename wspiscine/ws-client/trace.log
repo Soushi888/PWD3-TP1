@@ -1,0 +1,531 @@
+2020-03-27 06:23:00 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements
+Action : GET
+Login  : 
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/arrondissements<br>QUERY_STRING : ressource=arrondissements<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method RequetesPDO::getLivre() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:108
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php(67): Controleur-&gt;getArrondissements()
+#1 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#2 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>108</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:00 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements
+Action : POST
+Login  : 582P41:badpassword
+Horaires : Array
+(
+)
+
+Code retour HTTP : 405
+Données brutes :
+HTTP_AUTHORIZATION : Basic NTgyUDQxOmJhZHBhc3N3b3Jk</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/arrondissements<br>QUERY_STRING : ressource=arrondissements<br>
+Données JSON décodées :
+
+2020-03-27 06:23:00 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements
+Action : POST
+Login  : 582P41:ABC123
+Horaires : Array
+(
+)
+
+Code retour HTTP : 405
+Données brutes :
+HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/arrondissements<br>QUERY_STRING : ressource=arrondissements<br>
+Données JSON décodées :
+
+2020-03-27 06:23:00 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements/10
+Action : GET
+Login  : 
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/arrondissements/10<br>QUERY_STRING : ressource=arrondissements&id=10<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getArrondissement() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:00 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements/ANJ
+Action : GET
+Login  : 
+Code retour HTTP : 404
+Données brutes :
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /pwd3-tp1/wspiscine/arrondissements/ANJ was not found on this server.</p>
+<hr>
+<address>Apache/2.4.37 (Win64) PHP/7.3.1 Server at localhost Port 80</address>
+</body></html>
+
+Données JSON décodées :
+
+2020-03-27 06:23:00 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements/XXX
+Action : GET
+Login  : 
+Code retour HTTP : 404
+Données brutes :
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /pwd3-tp1/wspiscine/arrondissements/XXX was not found on this server.</p>
+<hr>
+<address>Apache/2.4.37 (Win64) PHP/7.3.1 Server at localhost Port 80</address>
+</body></html>
+
+Données JSON décodées :
+
+2020-03-27 06:23:00 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines
+Action : GET
+Login  : 
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines<br>QUERY_STRING : ressource=piscines<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getPiscines() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:00 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines
+Action : POST
+Login  : 582P41:ABC123
+Horaires : Array
+(
+)
+
+Code retour HTTP : 405
+Données brutes :
+HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines<br>QUERY_STRING : ressource=piscines<br>
+Données JSON décodées :
+
+2020-03-27 06:23:00 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines?code3l=OUT
+Action : GET
+Login  : 
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines?code3l=OUT<br>QUERY_STRING : ressource=piscines&code3l=OUT<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getPiscines() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:00 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements/OUT/piscines
+Action : GET
+Login  : 
+Code retour HTTP : 404
+Données brutes :
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /pwd3-tp1/wspiscine/arrondissements/OUT/piscines was not found on this server.</p>
+<hr>
+<address>Apache/2.4.37 (Win64) PHP/7.3.1 Server at localhost Port 80</address>
+</body></html>
+
+Données JSON décodées :
+
+2020-03-27 06:23:00 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines?code3l=XXX
+Action : GET
+Login  : 
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines?code3l=XXX<br>QUERY_STRING : ressource=piscines&code3l=XXX<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getPiscines() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:00 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements/XXX/piscines
+Action : GET
+Login  : 
+Code retour HTTP : 404
+Données brutes :
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /pwd3-tp1/wspiscine/arrondissements/XXX/piscines was not found on this server.</p>
+<hr>
+<address>Apache/2.4.37 (Win64) PHP/7.3.1 Server at localhost Port 80</address>
+</body></html>
+
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/10
+Action : GET
+Login  : 
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/10<br>QUERY_STRING : ressource=piscines&id=10<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getPiscine() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/10
+Action : POST
+Login  : 582P41:ABC123
+Horaires : Array
+(
+)
+
+Code retour HTTP : 405
+Données brutes :
+HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/10<br>QUERY_STRING : ressource=piscines&id=10<br>
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/100
+Action : GET
+Login  : 
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/100<br>QUERY_STRING : ressource=piscines&id=100<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getPiscine() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/10/xxx
+Action : GET
+Login  : 
+Code retour HTTP : 400
+Données brutes :
+HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/10/xxx<br>QUERY_STRING : ressource=piscines&id=10&action=xxx<br>
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
+Action : GET
+Login  : 
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/100/horaires
+Action : GET
+Login  : 
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/100/horaires<br>QUERY_STRING : ressource=piscines&id=100&action=horaires<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires?date=20180503
+Action : GET
+Login  : 
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires?date=20180503<br>QUERY_STRING : ressource=piscines&id=1&action=horaires&date=20180503<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires?date=XXX
+Action : GET
+Login  : 
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires?date=XXX<br>QUERY_STRING : ressource=piscines&id=1&action=horaires&date=XXX<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
+Action : POST
+Login  : 582P41:badpassword
+Horaires : Array
+(
+    [0] => Array
+        (
+            [id_piscine] => 1
+            [jour] => 2
+            [debut] => 10:30
+            [fin] => 19:10
+        )
+
+    [1] => Array
+        (
+            [id_piscine] => 1
+            [jour] => 4
+            [debut] => 12:30
+            [fin] => 22:10
+        )
+
+)
+
+Code retour HTTP : 401
+Données brutes :
+HTTP_AUTHORIZATION : Basic NTgyUDQxOmJhZHBhc3N3b3Jk</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br>
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
+Action : POST
+Login  : 582P41:ABC123
+Horaires : Array
+(
+    [0] => Array
+        (
+            [id_piscine] => 1
+            [jour] => 2
+            [debut] => 10:30
+            [fin] => 19:10
+        )
+
+    [1] => Array
+        (
+            [id_piscine] => 2
+            [jour] => 4
+            [debut] => 12:30
+            [fin] => 22:10
+        )
+
+)
+
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::postHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
+Action : POST
+Login  : 582P41:ABC123
+Horaires : Array
+(
+    [0] => Array
+        (
+            [id_piscine] => 1
+            [jour] => 2
+            [debut] => 20:30
+            [fin] => 19:10
+        )
+
+    [1] => Array
+        (
+            [id_piscine] => 1
+            [jour] => 4
+            [debut] => 12:30
+            [fin] => 22:10
+        )
+
+)
+
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::postHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
+Action : POST
+Login  : 582P41:ABC123
+Horaires : Array
+(
+    [0] => Array
+        (
+            [id_piscine] => 1
+            [jour] => 2
+            [debut] => 10:30
+            [fin] => 19:10
+        )
+
+    [1] => Array
+        (
+            [id_piscine] => 1
+            [jour] => 4
+            [debut] => 12:30
+            [fin] => 22:10
+        )
+
+)
+
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::postHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
+Action : GET
+Login  : 
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
+Action : DELETE
+Login  : baduser:badpassword
+Code retour HTTP : 401
+Données brutes :
+HTTP_AUTHORIZATION : Basic YmFkdXNlcjpiYWRwYXNzd29yZA==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : DELETE<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br>
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements
+Action : DELETE
+Login  : 582P41:ABC123
+Code retour HTTP : 405
+Données brutes :
+HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : DELETE<br>REQUEST_URI : /pwd3-tp1/wspiscine/arrondissements<br>QUERY_STRING : ressource=arrondissements<br>
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
+Action : DELETE
+Login  : 582P41:ABC123
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : DELETE<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::deleteHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
+Action : POST
+Login  : 582P41:ABC123
+Horaires : Array
+(
+    [0] => Array
+        (
+            [id_piscine] => 1
+            [jour] => 0
+            [debut] => 08:00
+            [fin] => 16:00
+        )
+
+    [1] => Array
+        (
+            [id_piscine] => 1
+            [jour] => 4
+            [debut] => 09:00
+            [fin] => 11:00
+        )
+
+)
+
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::postHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+
+2020-03-27 06:23:01 -----------------------------------------------------------
+URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
+Action : GET
+Login  : 
+Code retour HTTP : 200
+Données brutes :
+HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
+<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
+Stack trace:
+#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
+#1 {main}
+  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
+
+Données JSON décodées :
+

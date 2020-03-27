@@ -18,15 +18,15 @@ class Controleur
             'GET' => 'getPiscines'
         ),
         "arrondissements/:id/piscines" => array(
-            'GET' => 'getPiscines' 
+            'GET' => 'getPiscinesParArr'
         ),
         "piscines/:id" => array(
             'GET' => 'getPiscine'
         ),
         "piscines/:id/horaires" => array(
-            'GET' => 'getPiscine',
-            'POST' => 'postPiscine',
-            'DELETE' => 'deletePiscine'
+            'GET' => 'getHoraire',
+            'POST' => 'postHoraire',
+            'DELETE' => 'deleteHoraire'
         ),
     );
 
@@ -81,102 +81,143 @@ class Controleur
     /* Traitement des requêtes
     ----------------------- */
 
+
+
     /**
-     * Liste des livres
+     * Liste des arrondissements
      * @param void
      * @return
      */
-    private function getLivres()
+    private function getArrondissements()
     {
         $req = new RequetesPDO();
-        if (isset($_GET['annee'])) {
-            $liste = $req->chercherAnnee($_GET['annee']);
+        $arrondissements = $req->getArrondissements();
+        echo json_encode($arrondissements);
+    }
+
+    /**
+     * Informations sur l'arrondissement d'id $_GET['id']
+     * @param void
+     * @return
+     */
+    private function getArrondissement()
+    {
+        $req = new RequetesPDO();
+        $arrondissement = $req->getArrondissement($this->id);
+        echo json_encode($arrondissement);
+    }
+
+    /**
+     * Liste des piscines
+     * @param void
+     * @return
+     */
+    private function getPiscines()
+    {
+        $req = new RequetesPDO();
+        $piscines = $req->getPiscines();
+        echo json_encode($piscines);
+    }
+
+    /**
+     * Informations sur la piscine d'id $_GET['id']
+     * @param void
+     * @return
+     */
+    private function getPiscine()
+    {
+        $req = new RequetesPDO();
+        $piscines = $req->getPiscine($this->id);
+        echo json_encode($piscines);
+    }
+
+    /**
+     * Liste des piscines dont l'arrondissement est $_GET['id']
+     * @param void
+     * @return
+     */
+    private function getPiscinesParArr()
+    {
+        $req = new RequetesPDO();
+        $code3l = $_GET["id"];
+
+        $piscines = $req->getPiscinesParArr($code3l);
+        echo json_encode($piscines);
+    }
+
+    /**
+     * Liste des horaires
+     * @param void
+     * @return
+     */
+    private function getHoraires($id)
+    {
+        $req = new RequetesPDO();
+        if (isset($_GET['date'])) {
+            $liste = $req->getHoraireParDate($id, $_GET['date']);
         } else {
-            $liste = $req->getLivres();
+            $liste = $req->getHoraires($id);
         }
         echo json_encode($liste);
-    }
+    } 
+    //  /**
+    //  * Ajout d'un livre
+    //  * @param void
+    //  * @return
+    //  */
+    // private function postLivre()
+    // {
+    //     $req = new RequetesPDO();
+    //     // Trace::writeLog(json_decode($_POST['livre']), true));
+    //     $livre = (array) json_decode($_POST['livre']); // ou : $livre = json_decode($_POST['livre'], true); 
+    //     $oLivre = new Piscine(...array_values($livre));
+    //     if (count($oLivre->erreurs) === 0) {
+    //         $codeRetour = $req->ajouterLivre(...array_values($livre));
+    //         echo json_encode($codeRetour);
+    //     } else {
+    //         echo json_encode(["erreurs de données" => $oLivre->erreurs]);
+    //     }
+    // }
 
-    /**
-     * Informations sur le Livre d'id $_GET['id']
-     * @param void
-     * @return
-     */
-    private function getLivre()
-    {
-        $req = new RequetesPDO();
-        $livre = $req->getLivre($this->id);
-        echo json_encode($livre);
-    }
+    // /**
+    //  * Modifier le livre d'id $_GET['id']
+    //  * @param void
+    //  * @return
+    //  */
+    // private function putLivre()
+    // {
+    //     $req = new RequetesPDO();
+    //     $livre = $req->getLivre($this->id);
+    //     if ($livre === false) {
+    //         echo json_encode(["code" => false]);
+    //     } else {
+    //         $livreActuel = $livre;
+    //         $livre = (array) json_decode(file_get_contents("php://input")); // ou : $livre = json_decode(file_get_contents("php://input"), true); 
+    //         array_shift($livreActuel); // pour enlever le champ id
+    //         $oLivre = new Piscine(...array_values($livreActuel));
+    //         foreach ($livre as $key => $value) {
+    //             if (!is_null($value)) $oLivre->$key = $value;
+    //         }
+    //         if (count($oLivre->erreurs) === 0) {
+    //             $codeRetour = $req->modifierLivre($this->id, ...array_values($livre));
+    //             echo json_encode($codeRetour);
+    //         } else {
+    //             echo json_encode(["erreurs de données" => $oLivre->erreurs]);
+    //         }
+    //     }
+    // }
 
-    /**
-     * Liste des commentaires sur le Livre d'id $_GET['id']
-     * @param void
-     * @return
-     */
-    private function getLivreCommentaires()
-    {
-        echo "Récupérer les commentaires sur le livre d'id $this->id";
-    }
-
-    /**
-     * Ajout d'un livre
-     * @param void
-     * @return
-     */
-    private function postLivre()
-    {
-        $req = new RequetesPDO();
-        // Trace::writeLog(print_r(json_decode($_POST['livre']), true));
-        $livre = (array) json_decode($_POST['livre']); // ou : $livre = json_decode($_POST['livre'], true); 
-        $oLivre = new Piscine(...array_values($livre));
-        if (count($oLivre->erreurs) === 0) {
-            $codeRetour = $req->ajouterLivre(...array_values($livre));
-            echo json_encode($codeRetour);
-        } else {
-            echo json_encode(["erreurs de données" => $oLivre->erreurs]);
-        }
-    }
-
-    /**
-     * Modifier le livre d'id $_GET['id']
-     * @param void
-     * @return
-     */
-    private function putLivre()
-    {
-        $req = new RequetesPDO();
-        $livre = $req->getLivre($this->id);
-        if ($livre === false) {
-            echo json_encode(["code" => false]);
-        } else {
-            $livreActuel = $livre;
-            $livre = (array) json_decode(file_get_contents("php://input")); // ou : $livre = json_decode(file_get_contents("php://input"), true); 
-            array_shift($livreActuel); // pour enlever le champ id
-            $oLivre = new Piscine(...array_values($livreActuel));
-            foreach ($livre as $key => $value) {
-                if (!is_null($value)) $oLivre->$key = $value;
-            }
-            if (count($oLivre->erreurs) === 0) {
-                $codeRetour = $req->modifierLivre($this->id, ...array_values($livre));
-                echo json_encode($codeRetour);
-            } else {
-                echo json_encode(["erreurs de données" => $oLivre->erreurs]);
-            }
-        }
-    }
-
-    /**
-     * Supprimer le Livre d'id $_GET['id']
-     * @param void
-     * @return
-     */
-    private function deleteLivre()
-    {
-        $req = new RequetesPDO();
-        $codeRetour = $req->supprimerLivre($this->id);
-        echo json_encode($codeRetour);
-    }
+    // /**
+    //  * Supprimer le Livre d'id $_GET['id']
+    //  * @param void
+    //  * @return
+    //  */
+    // private function deleteLivre()
+    // {
+    //     $req = new RequetesPDO();
+    //     $codeRetour = $req->supprimerLivre($this->id);
+    //     echo json_encode($codeRetour);
+    // }
 
     /* Traitement des erreurs avec l'envoi d'un code HTTP
     -------------------------------------------------- */

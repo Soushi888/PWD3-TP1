@@ -8,16 +8,26 @@ class Controleur
 {
 
     private $requetes = array(
-        "livres"                  => array(
-            'GET'      => 'getLivres',
-            'POST'     => 'postLivre'
+        "arrondissements" => array(
+            'GET' => 'getArrondissements'
         ),
-        "livres/:id"              => array(
-            'GET'      => 'getLivre',
-            'PUT'      => 'putLivre',
-            'DELETE'   => 'deleteLivre'
+        "arrondissements/:id" => array(
+            'GET' => 'getArrondissement'
         ),
-        "livres/:id/commentaires" => array('GET'      => 'getLivreCommentaires')
+        "piscines" => array(
+            'GET' => 'getPiscines'
+        ),
+        "arrondissements/:id/piscines" => array(
+            'GET' => 'getPiscines' 
+        ),
+        "piscines/:id" => array(
+            'GET' => 'getPiscine'
+        ),
+        "piscines/:id/horaires" => array(
+            'GET' => 'getPiscine',
+            'POST' => 'postPiscine',
+            'DELETE' => 'deletePiscine'
+        ),
     );
 
     private $ressource;

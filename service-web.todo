@@ -2,12 +2,15 @@
 ✔ Fichier .htaccess @done (2020-03-21 07 h 40 min 19 s)
 
 ✔ Classe Arrondissement @done (2020-03-24 11 h 02 min 10 s)
-☐ Classe Piscine
-☐ Classe Horaire
+✔ Classe Piscine @done (2020-03-25 15 h 25 min 04 s)
+✔ Classe Horaire @done (2020-03-25 15 h 25 min 05 s)
 
 ☐ Requêtes PDO
+    ☐ Arrondissement
+    ☐ Piscine
+    ☐ Horaire
+    
 ☐ Classe Controleur
-
-☐ GET
-☐ POST
-☐ DELETE
+    ☐ Arrondissement
+    ☐ Piscine
+    ☐ Horaire

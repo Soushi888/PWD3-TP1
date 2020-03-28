@@ -5,12 +5,12 @@
 ✔ Classe Piscine @done (2020-03-25 15 h 25 min 04 s)
 ✔ Classe Horaire @done (2020-03-25 15 h 25 min 05 s)
 
-☐ Requêtes PDO
-    ☐ Arrondissement
-    ☐ Piscine
-    ☐ Horaire
-    
-☐ Classe Controleur
+✔ Requêtes PDO @done (2020-03-27 02 h 35 min 34 s)
+    ✔ Arrondissement @done (2020-03-27 02 h 35 min 34 s)
+    ✔ Piscine @done (2020-03-27 02 h 35 min 35 s)
+    ✔ Horaire @done (2020-03-27 02 h 35 min 35 s)
+
+✔ Classe Controleur @done (2020-03-27 02 h 35 min 36 s)
     ☐ Arrondissement
     ☐ Piscine
     ☐ Horaire

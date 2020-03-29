@@ -168,73 +168,33 @@ class Controleur
      */
     private function postHoraire()
     {
+
         $req = new RequetesPDO();
         $horaires = json_decode($_POST['horaires'], true);
-        $liste = $req->getHoraires($this->id);
-        var_dump($liste);
-        var_dump($horaires);
-        // exit;
 
         foreach ($horaires as $horaire) {
             $oHoraire = new Horaire(...array_values($horaire));
+
             if (count($oHoraire->erreurs) === 0) {
-                foreach ($liste as $item) {
-                    echo $horaire["id_piscine"] . " - " . $item["id_piscine"] . "<br>";
-                    echo $horaire["jour"] . " - " . $item["jour"] . "<br>";
-                    if ($horaire["id_piscine"] == $item["id_piscine"] && $horaire["jour"] == $item["jour"]) {
-                        $codeRetour = $req->modifierHoraire(...array_values($horaire));
-                        echo json_encode($codeRetour);
-                        exit;
-                    }
-                }
                 $codeRetour = $req->ajouterHoraire(...array_values($horaire));
-                echo json_encode($codeRetour);
+                echo json_encode($codeRetour) . "\n";
             } else {
                 echo json_encode(["erreurs de données" => $oHoraire->erreurs]);
             }
-            // var_dump($oHoraire);
         }
     }
 
-    // /**
-    //  * Modifier le livre d'id $_GET['id']
-    //  * @param void
-    //  * @return
-    //  */
-    // private function putLivre()
-    // {
-    //     $req = new RequetesPDO();
-    //     $livre = $req->getLivre($this->id);
-    //     if ($livre === false) {
-    //         echo json_encode(["code" => false]);
-    //     } else {
-    //         $livreActuel = $livre;
-    //         $livre = (array) json_decode(file_get_contents("php://input")); // ou : $livre = json_decode(file_get_contents("php://input"), true); 
-    //         array_shift($livreActuel); // pour enlever le champ id
-    //         $oLivre = new Piscine(...array_values($livreActuel));
-    //         foreach ($livre as $key => $value) {
-    //             if (!is_null($value)) $oLivre->$key = $value;
-    //         }
-    //         if (count($oLivre->erreurs) === 0) {
-    //             $codeRetour = $req->modifierLivre($this->id, ...array_values($livre));
-    //             echo json_encode($codeRetour);
-    //         } else {
-    //             echo json_encode(["erreurs de données" => $oLivre->erreurs]);
-    //         }
-    //     }
-    // }
-
-    // /**
-    //  * Supprimer le Livre d'id $_GET['id']
-    //  * @param void
-    //  * @return
-    //  */
-    // private function deleteLivre()
-    // {
-    //     $req = new RequetesPDO();
-    //     $codeRetour = $req->supprimerLivre($this->id);
-    //     echo json_encode($codeRetour);
-    // }
+    /**
+     * Supprimer l'horaire d'id $_GET['id']
+     * @param void
+     * @return
+     */
+    private function deleteHoraire()
+    {
+        $req = new RequetesPDO();
+        $codeRetour = $req->supprimerHoraire($this->id);
+        echo json_encode($codeRetour) . "\n";
+    }
 
     /* Traitement des erreurs avec l'envoi d'un code HTTP
     -------------------------------------------------- */

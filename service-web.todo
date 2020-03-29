@@ -15,7 +15,7 @@
         ✔ GET @done (2020-03-29 00 h 34 min 45 s)
     ✔ Piscine @done (2020-03-29 00 h 34 min 25 s)
         ✔ GET @done (2020-03-29 00 h 34 min 51 s)
-    ☐ Horaire
+    ✔ Horaire @done (2020-03-29 19 h 34 min 16 s)
         ✔ GET @done (2020-03-29 00 h 35 min 08 s)
-        ☐ POST
-        ☐ DELETE
+        ✔ POST @done (2020-03-29 19 h 34 min 14 s)
+        ✔ DELETE @done (2020-03-29 19 h 34 min 13 s)

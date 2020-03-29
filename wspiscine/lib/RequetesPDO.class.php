@@ -155,40 +155,49 @@ class RequetesPDO
     {
         $sPDO = SingletonPDO::getInstance();
         $oPDOStatement = $sPDO->prepare(
-            'INSERT INTO horaire SET id_piscine = :id_piscine, jour = :jour, debut = :debut, fin = :fin'
+            'INSERT INTO horaire 
+            SET 
+                id_piscine = :id_piscine, 
+                jour = :jour, 
+                debut = :debut, 
+                fin = :fin
+                ON DUPLICATE KEY UPDATE
+                debut = :debut,
+                fin = :fin'
         );
         $oPDOStatement->bindParam(':id_piscine', $id_piscine);
         $oPDOStatement->bindParam(':jour', $jour);
         $oPDOStatement->bindParam(':debut', $debut);
         $oPDOStatement->bindParam(':fin', $fin);
         $oPDOStatement->execute();
+
         if ($oPDOStatement->rowCount() == 0) {
             return false;
         }
         return true;
     }
 
-    /**
-     * Modification d'un horaire dans la table horaire 
-     *
-     * @return boolean
-     */
-    public function modifierHoraire($id_piscine, $jour, $debut, $fin)
-    {
-        $sPDO = SingletonPDO::getInstance();
-        $oPDOStatement = $sPDO->prepare(
-            'UPDATE horaire SET jour = :jour, debut = :debut, fin = :fin WHERE id_piscine = :id_piscine'
-        );
-        $oPDOStatement->bindParam(':id_piscine', $id_piscine);
-        $oPDOStatement->bindParam(':jour', $jour);
-        $oPDOStatement->bindParam(':debut', $debut);
-        $oPDOStatement->bindParam(':fin', $fin);
-        $oPDOStatement->execute();
-        if ($oPDOStatement->rowCount() == 0) {
-            return false;
-        }
-        return true;
-    }
+    // /**
+    //  * Modification d'un horaire dans la table horaire 
+    //  *
+    //  * @return boolean
+    //  */
+    // public function modifierHoraire($id_piscine, $jour, $debut, $fin)
+    // {
+    //     $sPDO = SingletonPDO::getInstance();
+    //     $oPDOStatement = $sPDO->prepare(
+    //         'UPDATE horaire SET jour = :jour, debut = :debut, fin = :fin WHERE id_piscine = :id_piscine'
+    //     );
+    //     $oPDOStatement->bindParam(':id_piscine', $id_piscine);
+    //     $oPDOStatement->bindParam(':jour', $jour);
+    //     $oPDOStatement->bindParam(':debut', $debut);
+    //     $oPDOStatement->bindParam(':fin', $fin);
+    //     $oPDOStatement->execute();
+    //     if ($oPDOStatement->rowCount() == 0) {
+    //         return false;
+    //     }
+    //     return true;
+    // }
 
     /**
      * Suppression d'un horaire dans la table horaire à partir de son id 

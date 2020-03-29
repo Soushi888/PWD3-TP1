@@ -1,4 +1,4 @@
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements
 Action : GET
 Login  : 
@@ -45,7 +45,7 @@ Array
 
 )
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements
 Action : POST
 Login  : 582P41:badpassword
@@ -58,7 +58,7 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements
 Action : POST
 Login  : 582P41:ABC123
@@ -71,7 +71,7 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements/10
 Action : GET
 Login  : 
@@ -80,7 +80,7 @@ Données brutes :
 false
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements/ANJ
 Action : GET
 Login  : 
@@ -98,7 +98,7 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements/XXX
 Action : GET
 Login  : 
@@ -116,7 +116,7 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines
 Action : GET
 Login  : 
@@ -502,7 +502,7 @@ Array
 
 )
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines
 Action : POST
 Login  : 582P41:ABC123
@@ -515,7 +515,7 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines?code3l=OUT
 Action : GET
 Login  : 
@@ -901,7 +901,7 @@ Array
 
 )
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements/OUT/piscines
 Action : GET
 Login  : 
@@ -919,7 +919,7 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines?code3l=XXX
 Action : GET
 Login  : 
@@ -1305,7 +1305,7 @@ Array
 
 )
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements/XXX/piscines
 Action : GET
 Login  : 
@@ -1323,7 +1323,7 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/10
 Action : GET
 Login  : 
@@ -1342,7 +1342,7 @@ stdClass Object
     [gestion] => Privé
 )
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/10
 Action : POST
 Login  : 582P41:ABC123
@@ -1355,7 +1355,7 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/100
 Action : GET
 Login  : 
@@ -1364,7 +1364,7 @@ Données brutes :
 false
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/10/xxx
 Action : GET
 Login  : 
@@ -1373,13 +1373,13 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-[{"id_piscine":"1","jour":"0","debut":"08:00:00","fin":"16:00:00"},{"id_piscine":"1","jour":"2","debut":"10:30:00","fin":"19:10:00"},{"id_piscine":"1","jour":"4","debut":"09:00:00","fin":"11:00:00"},{"id_piscine":"2","jour":"4","debut":"12:30:00","fin":"22:10:00"}]
+[{"id_piscine":"1","jour":"0","debut":"08:00:00","fin":"16:00:00"},{"id_piscine":"1","jour":"4","debut":"09:00:00","fin":"11:00:00"},{"id_piscine":"2","jour":"4","debut":"12:30:00","fin":"22:10:00"}]
 Données JSON décodées :
 Array
 (
@@ -1394,20 +1394,12 @@ Array
     [1] => stdClass Object
         (
             [id_piscine] => 1
-            [jour] => 2
-            [debut] => 10:30:00
-            [fin] => 19:10:00
-        )
-
-    [2] => stdClass Object
-        (
-            [id_piscine] => 1
             [jour] => 4
             [debut] => 09:00:00
             [fin] => 11:00:00
         )
 
-    [3] => stdClass Object
+    [2] => stdClass Object
         (
             [id_piscine] => 2
             [jour] => 4
@@ -1417,13 +1409,13 @@ Array
 
 )
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/100/horaires
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-[{"id_piscine":"1","jour":"0","debut":"08:00:00","fin":"16:00:00"},{"id_piscine":"1","jour":"2","debut":"10:30:00","fin":"19:10:00"},{"id_piscine":"1","jour":"4","debut":"09:00:00","fin":"11:00:00"},{"id_piscine":"2","jour":"4","debut":"12:30:00","fin":"22:10:00"}]
+[{"id_piscine":"1","jour":"0","debut":"08:00:00","fin":"16:00:00"},{"id_piscine":"1","jour":"4","debut":"09:00:00","fin":"11:00:00"},{"id_piscine":"2","jour":"4","debut":"12:30:00","fin":"22:10:00"}]
 Données JSON décodées :
 Array
 (
@@ -1438,20 +1430,12 @@ Array
     [1] => stdClass Object
         (
             [id_piscine] => 1
-            [jour] => 2
-            [debut] => 10:30:00
-            [fin] => 19:10:00
-        )
-
-    [2] => stdClass Object
-        (
-            [id_piscine] => 1
             [jour] => 4
             [debut] => 09:00:00
             [fin] => 11:00:00
         )
 
-    [3] => stdClass Object
+    [2] => stdClass Object
         (
             [id_piscine] => 2
             [jour] => 4
@@ -1461,7 +1445,7 @@ Array
 
 )
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires?date=20180503
 Action : GET
 Login  : 
@@ -1481,7 +1465,7 @@ Array
 
 )
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires?date=XXX
 Action : GET
 Login  : 
@@ -1501,7 +1485,7 @@ Array
 
 )
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : POST
 Login  : 582P41:badpassword
@@ -1530,7 +1514,7 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : POST
 Login  : 582P41:ABC123
@@ -1554,82 +1538,14 @@ Horaires : Array
 
 )
 
-Code retour HTTP : 500
+Code retour HTTP : 200
 Données brutes :
-array(4) {
-  [0]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "1"
-    ["jour"]=>
-    string(1) "0"
-    ["debut"]=>
-    string(8) "08:00:00"
-    ["fin"]=>
-    string(8) "16:00:00"
-  }
-  [1]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "1"
-    ["jour"]=>
-    string(1) "2"
-    ["debut"]=>
-    string(8) "10:30:00"
-    ["fin"]=>
-    string(8) "19:10:00"
-  }
-  [2]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "1"
-    ["jour"]=>
-    string(1) "4"
-    ["debut"]=>
-    string(8) "09:00:00"
-    ["fin"]=>
-    string(8) "11:00:00"
-  }
-  [3]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "2"
-    ["jour"]=>
-    string(1) "4"
-    ["debut"]=>
-    string(8) "12:30:00"
-    ["fin"]=>
-    string(8) "22:10:00"
-  }
-}
-array(2) {
-  [0]=>
-  array(4) {
-    ["id_piscine"]=>
-    int(1)
-    ["jour"]=>
-    int(2)
-    ["debut"]=>
-    string(5) "10:30"
-    ["fin"]=>
-    string(5) "19:10"
-  }
-  [1]=>
-  array(4) {
-    ["id_piscine"]=>
-    int(2)
-    ["jour"]=>
-    int(4)
-    ["debut"]=>
-    string(5) "12:30"
-    ["fin"]=>
-    string(5) "22:10"
-  }
-}
-1 - 1<br>2 - 0<br>1 - 1<br>2 - 2<br>SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '1-2' pour la clef 'PRIMARY'
+true
+false
+
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : POST
 Login  : 582P41:ABC123
@@ -1653,82 +1569,14 @@ Horaires : Array
 
 )
 
-Code retour HTTP : 500
+Code retour HTTP : 200
 Données brutes :
-array(4) {
-  [0]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "1"
-    ["jour"]=>
-    string(1) "0"
-    ["debut"]=>
-    string(8) "08:00:00"
-    ["fin"]=>
-    string(8) "16:00:00"
-  }
-  [1]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "1"
-    ["jour"]=>
-    string(1) "2"
-    ["debut"]=>
-    string(8) "10:30:00"
-    ["fin"]=>
-    string(8) "19:10:00"
-  }
-  [2]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "1"
-    ["jour"]=>
-    string(1) "4"
-    ["debut"]=>
-    string(8) "09:00:00"
-    ["fin"]=>
-    string(8) "11:00:00"
-  }
-  [3]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "2"
-    ["jour"]=>
-    string(1) "4"
-    ["debut"]=>
-    string(8) "12:30:00"
-    ["fin"]=>
-    string(8) "22:10:00"
-  }
-}
-array(2) {
-  [0]=>
-  array(4) {
-    ["id_piscine"]=>
-    int(1)
-    ["jour"]=>
-    int(2)
-    ["debut"]=>
-    string(5) "20:30"
-    ["fin"]=>
-    string(5) "19:10"
-  }
-  [1]=>
-  array(4) {
-    ["id_piscine"]=>
-    int(1)
-    ["jour"]=>
-    int(4)
-    ["debut"]=>
-    string(5) "12:30"
-    ["fin"]=>
-    string(5) "22:10"
-  }
-}
-1 - 1<br>2 - 0<br>1 - 1<br>2 - 2<br>SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '1-2' pour la clef 'PRIMARY'
+true
+true
+
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : POST
 Login  : 582P41:ABC123
@@ -1752,88 +1600,20 @@ Horaires : Array
 
 )
 
-Code retour HTTP : 500
+Code retour HTTP : 200
 Données brutes :
-array(4) {
-  [0]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "1"
-    ["jour"]=>
-    string(1) "0"
-    ["debut"]=>
-    string(8) "08:00:00"
-    ["fin"]=>
-    string(8) "16:00:00"
-  }
-  [1]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "1"
-    ["jour"]=>
-    string(1) "2"
-    ["debut"]=>
-    string(8) "10:30:00"
-    ["fin"]=>
-    string(8) "19:10:00"
-  }
-  [2]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "1"
-    ["jour"]=>
-    string(1) "4"
-    ["debut"]=>
-    string(8) "09:00:00"
-    ["fin"]=>
-    string(8) "11:00:00"
-  }
-  [3]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "2"
-    ["jour"]=>
-    string(1) "4"
-    ["debut"]=>
-    string(8) "12:30:00"
-    ["fin"]=>
-    string(8) "22:10:00"
-  }
-}
-array(2) {
-  [0]=>
-  array(4) {
-    ["id_piscine"]=>
-    int(1)
-    ["jour"]=>
-    int(2)
-    ["debut"]=>
-    string(5) "10:30"
-    ["fin"]=>
-    string(5) "19:10"
-  }
-  [1]=>
-  array(4) {
-    ["id_piscine"]=>
-    int(1)
-    ["jour"]=>
-    int(4)
-    ["debut"]=>
-    string(5) "12:30"
-    ["fin"]=>
-    string(5) "22:10"
-  }
-}
-1 - 1<br>2 - 0<br>1 - 1<br>2 - 2<br>SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '1-2' pour la clef 'PRIMARY'
+true
+false
+
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-[{"id_piscine":"1","jour":"0","debut":"08:00:00","fin":"16:00:00"},{"id_piscine":"1","jour":"2","debut":"10:30:00","fin":"19:10:00"},{"id_piscine":"1","jour":"4","debut":"09:00:00","fin":"11:00:00"},{"id_piscine":"2","jour":"4","debut":"12:30:00","fin":"22:10:00"}]
+[{"id_piscine":"1","jour":"0","debut":"08:00:00","fin":"16:00:00"},{"id_piscine":"1","jour":"2","debut":"10:30:00","fin":"19:10:00"},{"id_piscine":"1","jour":"4","debut":"12:30:00","fin":"22:10:00"},{"id_piscine":"2","jour":"4","debut":"12:30:00","fin":"22:10:00"}]
 Données JSON décodées :
 Array
 (
@@ -1857,8 +1637,8 @@ Array
         (
             [id_piscine] => 1
             [jour] => 4
-            [debut] => 09:00:00
-            [fin] => 11:00:00
+            [debut] => 12:30:00
+            [fin] => 22:10:00
         )
 
     [3] => stdClass Object
@@ -1871,7 +1651,7 @@ Array
 
 )
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : DELETE
 Login  : baduser:badpassword
@@ -1880,7 +1660,7 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements
 Action : DELETE
 Login  : 582P41:ABC123
@@ -1889,22 +1669,16 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : DELETE
 Login  : 582P41:ABC123
 Code retour HTTP : 200
 Données brutes :
-<br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::deleteHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+true
 Données JSON décodées :
-
-2020-03-29 05:19:57 -----------------------------------------------------------
+1
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : POST
 Login  : 582P41:ABC123
@@ -1928,88 +1702,20 @@ Horaires : Array
 
 )
 
-Code retour HTTP : 500
+Code retour HTTP : 200
 Données brutes :
-array(4) {
-  [0]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "1"
-    ["jour"]=>
-    string(1) "0"
-    ["debut"]=>
-    string(8) "08:00:00"
-    ["fin"]=>
-    string(8) "16:00:00"
-  }
-  [1]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "1"
-    ["jour"]=>
-    string(1) "2"
-    ["debut"]=>
-    string(8) "10:30:00"
-    ["fin"]=>
-    string(8) "19:10:00"
-  }
-  [2]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "1"
-    ["jour"]=>
-    string(1) "4"
-    ["debut"]=>
-    string(8) "09:00:00"
-    ["fin"]=>
-    string(8) "11:00:00"
-  }
-  [3]=>
-  array(4) {
-    ["id_piscine"]=>
-    string(1) "2"
-    ["jour"]=>
-    string(1) "4"
-    ["debut"]=>
-    string(8) "12:30:00"
-    ["fin"]=>
-    string(8) "22:10:00"
-  }
-}
-array(2) {
-  [0]=>
-  array(4) {
-    ["id_piscine"]=>
-    int(1)
-    ["jour"]=>
-    int(0)
-    ["debut"]=>
-    string(5) "08:00"
-    ["fin"]=>
-    string(5) "16:00"
-  }
-  [1]=>
-  array(4) {
-    ["id_piscine"]=>
-    int(1)
-    ["jour"]=>
-    int(4)
-    ["debut"]=>
-    string(5) "09:00"
-    ["fin"]=>
-    string(5) "11:00"
-  }
-}
-1 - 1<br>0 - 0<br>SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '1-0' pour la clef 'PRIMARY'
+true
+true
+
 Données JSON décodées :
 
-2020-03-29 05:19:57 -----------------------------------------------------------
+2020-03-29 23:29:43 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-[{"id_piscine":"1","jour":"0","debut":"08:00:00","fin":"16:00:00"},{"id_piscine":"1","jour":"2","debut":"10:30:00","fin":"19:10:00"},{"id_piscine":"1","jour":"4","debut":"09:00:00","fin":"11:00:00"},{"id_piscine":"2","jour":"4","debut":"12:30:00","fin":"22:10:00"}]
+[{"id_piscine":"1","jour":"0","debut":"08:00:00","fin":"16:00:00"},{"id_piscine":"1","jour":"4","debut":"09:00:00","fin":"11:00:00"},{"id_piscine":"2","jour":"4","debut":"12:30:00","fin":"22:10:00"}]
 Données JSON décodées :
 Array
 (
@@ -2024,20 +1730,12 @@ Array
     [1] => stdClass Object
         (
             [id_piscine] => 1
-            [jour] => 2
-            [debut] => 10:30:00
-            [fin] => 19:10:00
-        )
-
-    [2] => stdClass Object
-        (
-            [id_piscine] => 1
             [jour] => 4
             [debut] => 09:00:00
             [fin] => 11:00:00
         )
 
-    [3] => stdClass Object
+    [2] => stdClass Object
         (
             [id_piscine] => 2
             [jour] => 4

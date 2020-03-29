@@ -163,7 +163,7 @@ class Horaire
     {
         unset($this->erreurs['debut']);
         $debut = trim($debut);
-        $regExp = "/^([0-1][0-9]|2[0-4]):([0-5][0-9])$/"; // une heure valide au format hh:mm
+        $regExp = "/^([0-1][0-9]|2[0-3]):([0-5][0-9])(:([0-5][0-9]))?$/"; // une heure valide au format hh:mm
         if ($debut !== null && preg_match($regExp, $debut)) {
             $this->debut = $debut;
         } else {

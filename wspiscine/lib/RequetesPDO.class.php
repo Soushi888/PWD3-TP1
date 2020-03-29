@@ -131,7 +131,7 @@ class RequetesPDO
     public function getHoraireParDate($id, $date)
     {
         $jour = date("w", strtotime($date));
-
+        // die($jour);
         $sPDO = SingletonPDO::getInstance();
 
         $oPDOStatement = $sPDO->prepare(
@@ -142,6 +142,7 @@ class RequetesPDO
         $oPDOStatement->execute();
 
         $horaires = $oPDOStatement->fetchAll(PDO::FETCH_ASSOC);
+        // echo $jour;
         return $horaires;
     }
 

@@ -11,6 +11,11 @@
     ✔ Horaire @done (2020-03-27 02 h 35 min 35 s)
 
 ✔ Classe Controleur @done (2020-03-27 02 h 35 min 36 s)
-    ☐ Arrondissement
-    ☐ Piscine
+    ✔ Arrondissement @done (2020-03-29 00 h 34 min 24 s)
+        ✔ GET @done (2020-03-29 00 h 34 min 45 s)
+    ✔ Piscine @done (2020-03-29 00 h 34 min 25 s)
+        ✔ GET @done (2020-03-29 00 h 34 min 51 s)
     ☐ Horaire
+        ✔ GET @done (2020-03-29 00 h 35 min 08 s)
+        ☐ POST
+        ☐ DELETE

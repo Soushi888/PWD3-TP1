@@ -1,20 +1,51 @@
-2020-03-27 06:23:00 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/arrondissements<br>QUERY_STRING : ressource=arrondissements<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method RequetesPDO::getLivre() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:108
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php(67): Controleur-&gt;getArrondissements()
-#1 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#2 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>108</b><br />
-
+[{"code3l":"ANJ","nom":"Anjou","acronyme":"ANJ"},{"code3l":"LAC","nom":"Lachine","acronyme":"LAC"},{"code3l":"LAS","nom":"LaSalle","acronyme":"LAS"},{"code3l":"OUT","nom":"Outremont","acronyme":"OUTR"},{"code3l":"VER","nom":"Verdun","acronyme":"VER"}]
 Données JSON décodées :
+Array
+(
+    [0] => stdClass Object
+        (
+            [code3l] => ANJ
+            [nom] => Anjou
+            [acronyme] => ANJ
+        )
 
-2020-03-27 06:23:00 -----------------------------------------------------------
+    [1] => stdClass Object
+        (
+            [code3l] => LAC
+            [nom] => Lachine
+            [acronyme] => LAC
+        )
+
+    [2] => stdClass Object
+        (
+            [code3l] => LAS
+            [nom] => LaSalle
+            [acronyme] => LAS
+        )
+
+    [3] => stdClass Object
+        (
+            [code3l] => OUT
+            [nom] => Outremont
+            [acronyme] => OUTR
+        )
+
+    [4] => stdClass Object
+        (
+            [code3l] => VER
+            [nom] => Verdun
+            [acronyme] => VER
+        )
+
+)
+
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements
 Action : POST
 Login  : 582P41:badpassword
@@ -24,10 +55,10 @@ Horaires : Array
 
 Code retour HTTP : 405
 Données brutes :
-HTTP_AUTHORIZATION : Basic NTgyUDQxOmJhZHBhc3N3b3Jk</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/arrondissements<br>QUERY_STRING : ressource=arrondissements<br>
+
 Données JSON décodées :
 
-2020-03-27 06:23:00 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements
 Action : POST
 Login  : 582P41:ABC123
@@ -37,25 +68,19 @@ Horaires : Array
 
 Code retour HTTP : 405
 Données brutes :
-HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/arrondissements<br>QUERY_STRING : ressource=arrondissements<br>
+
 Données JSON décodées :
 
-2020-03-27 06:23:00 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements/10
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/arrondissements/10<br>QUERY_STRING : ressource=arrondissements&id=10<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getArrondissement() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+false
 Données JSON décodées :
 
-2020-03-27 06:23:00 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements/ANJ
 Action : GET
 Login  : 
@@ -73,7 +98,7 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-27 06:23:00 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements/XXX
 Action : GET
 Login  : 
@@ -91,22 +116,393 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-27 06:23:00 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines<br>QUERY_STRING : ressource=piscines<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getPiscines() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+[{"id_piscine":"1","type":"Piscine ext\u00e9rieure","nom":"Parc Lucie-Bruneau","arrondissement_code3l":"ANJ","adresse":"7 051, Avenue de l\u2019Alsace","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"2","type":"Piscine ext\u00e9rieure","nom":"Parc Ch\u00e9nier","arrondissement_code3l":"ANJ","adresse":"5 555, Avenue de l\u2019Ar\u00e9na","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"3","type":"Piscine ext\u00e9rieure","nom":"Parc des Roseraies","arrondissement_code3l":"ANJ","adresse":"7 070, Avenue de la Nantaise","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"4","type":"Piscine ext\u00e9rieure","nom":"Parc Roger-Rousseau","arrondissement_code3l":"ANJ","adresse":"7 501, Avenue Rondeau","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"5","type":"Piscine ext\u00e9rieure","nom":"Parc Verdelle","arrondissement_code3l":"ANJ","adresse":"8 441, Place Verdelles","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"6","type":"Pataugeoire","nom":"Parc Talcy","arrondissement_code3l":"ANJ","adresse":"8 151, Avenue Talcy","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"7","type":"Pataugeoire","nom":"Parc Verdelle","arrondissement_code3l":"ANJ","adresse":"8 441, Place Verdelles","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"8","type":"Pataugeoire","nom":"Parc Lucie-Bruneau","arrondissement_code3l":"ANJ","adresse":"7 051, Avenue de l\u2019Alsace","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"9","type":"Pataugeoire","nom":"Parc Andr\u00e9-Laurendeau","arrondissement_code3l":"ANJ","adresse":"8 361, Avenue Andr\u00e9-Laurendeau","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"10","type":"Pataugeoire","nom":"Parc Ch\u00e9nier","arrondissement_code3l":"ANJ","adresse":"5 555, Avenue de l\u2019Ar\u00e9na","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"11","type":"Piscine ext\u00e9rieure","nom":"Parc Lasalle","arrondissement_code3l":"LAC","adresse":"475, 10e Avenue","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"12","type":"Piscine ext\u00e9rieure","nom":"Parc Kirkland","arrondissement_code3l":"LAC","adresse":"150, Rue des \u00c9rables","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"13","type":"Piscine ext\u00e9rieure","nom":"Parc Duff-Court","arrondissement_code3l":"LAC","adresse":"1 830, Croissant Roy","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"14","type":"Piscine ext\u00e9rieure","nom":"Parc Dixie","arrondissement_code3l":"LAC","adresse":"695, 54e Avenue","propriete":"Municipale","gestion":"OBNL"},{"id_piscine":"15","type":"Piscine ext\u00e9rieure","nom":"Port de Plaisance","arrondissement_code3l":"LAC","adresse":"1 800, Chemin des Iroquois","propriete":"Municipale","gestion":"OBNL"},{"id_piscine":"16","type":"Pataugeoire","nom":"Parc Lasalle 1","arrondissement_code3l":"LAC","adresse":"1 950, Remembrance","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"17","type":"Piscine int\u00e9rieure","nom":"L\u2019Aquad\u00f4me LaSalle","arrondissement_code3l":"LAS","adresse":"1 411, Rue Lapierre","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"18","type":"Piscine ext\u00e9rieure","nom":"Parc Haymard","arrondissement_code3l":"LAS","adresse":"170, Avenue Orchard","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"19","type":"Piscine ext\u00e9rieure","nom":"Parc Lefebvre","arrondissement_code3l":"LAS","adresse":"8 600, Rue Hardy","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"20","type":"Piscine ext\u00e9rieure","nom":"Parc Leroux","arrondissement_code3l":"LAS","adresse":"7 540, Rue Centrale","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"21","type":"Piscine ext\u00e9rieure","nom":"Parc Raymond","arrondissement_code3l":"LAS","adresse":"555, Boulevard Bishop-Power","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"22","type":"Piscine ext\u00e9rieure","nom":"Parc Ouellette (natation et r\u00e9cr\u00e9atif)","arrondissement_code3l":"LAS","adresse":"1 407, Rue Serre","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"23","type":"Piscine ext\u00e9rieure","nom":"Parc M\u00e9nard","arrondissement_code3l":"LAS","adresse":"300, Rue Cl\u00e9ment","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"24","type":"Piscine ext\u00e9rieure","nom":"Parc Lacharit\u00e9","arrondissement_code3l":"LAS","adresse":"55, Avenue Latour","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"25","type":"Piscine ext\u00e9rieure","nom":"Parc John-F-Kennedy","arrondissement_code3l":"OUT","adresse":"860, Avenue Outremont","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"26","type":"Pataugeoire","nom":"Parc John-F.-Kennedy","arrondissement_code3l":"OUT","adresse":"860, Avenue Outremont","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"27","type":"Piscine ext\u00e9rieure","nom":"Parc Arthur-Therrien","arrondissement_code3l":"VER","adresse":"10, Rue Hickson","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"28","type":"Piscine ext\u00e9rieure","nom":"Parc Elgar","arrondissement_code3l":"VER","adresse":"260, Rue Elgar","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"29","type":"Piscine ext\u00e9rieure","nom":"Parc de la Fontaine","arrondissement_code3l":"VER","adresse":"550, Place de la Fontaine","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"30","type":"Piscine ext\u00e9rieure","nom":"Natatorium de Verdun","arrondissement_code3l":"VER","adresse":"6 500, Boulevard LaSalle","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"31","type":"Pataugeoire","nom":"Parc Arthur-Therrien","arrondissement_code3l":"VER","adresse":"10, Rue Hickson","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"32","type":"Pataugeoire","nom":"Parc Elgar","arrondissement_code3l":"VER","adresse":"260, Rue Elgar","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"33","type":"Pataugeoire","nom":"Parc de la Fontaine","arrondissement_code3l":"VER","adresse":"550, Place de la Fontaine","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"34","type":"Pataugeoire","nom":"Natatorium de Verdun","arrondissement_code3l":"VER","adresse":"6 500, Boulevard LaSalle","propriete":"Municipale","gestion":"Municipale"}]
 Données JSON décodées :
+Array
+(
+    [0] => stdClass Object
+        (
+            [id_piscine] => 1
+            [type] => Piscine extérieure
+            [nom] => Parc Lucie-Bruneau
+            [arrondissement_code3l] => ANJ
+            [adresse] => 7 051, Avenue de l’Alsace
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
 
-2020-03-27 06:23:00 -----------------------------------------------------------
+    [1] => stdClass Object
+        (
+            [id_piscine] => 2
+            [type] => Piscine extérieure
+            [nom] => Parc Chénier
+            [arrondissement_code3l] => ANJ
+            [adresse] => 5 555, Avenue de l’Aréna
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [2] => stdClass Object
+        (
+            [id_piscine] => 3
+            [type] => Piscine extérieure
+            [nom] => Parc des Roseraies
+            [arrondissement_code3l] => ANJ
+            [adresse] => 7 070, Avenue de la Nantaise
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [3] => stdClass Object
+        (
+            [id_piscine] => 4
+            [type] => Piscine extérieure
+            [nom] => Parc Roger-Rousseau
+            [arrondissement_code3l] => ANJ
+            [adresse] => 7 501, Avenue Rondeau
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [4] => stdClass Object
+        (
+            [id_piscine] => 5
+            [type] => Piscine extérieure
+            [nom] => Parc Verdelle
+            [arrondissement_code3l] => ANJ
+            [adresse] => 8 441, Place Verdelles
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [5] => stdClass Object
+        (
+            [id_piscine] => 6
+            [type] => Pataugeoire
+            [nom] => Parc Talcy
+            [arrondissement_code3l] => ANJ
+            [adresse] => 8 151, Avenue Talcy
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [6] => stdClass Object
+        (
+            [id_piscine] => 7
+            [type] => Pataugeoire
+            [nom] => Parc Verdelle
+            [arrondissement_code3l] => ANJ
+            [adresse] => 8 441, Place Verdelles
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [7] => stdClass Object
+        (
+            [id_piscine] => 8
+            [type] => Pataugeoire
+            [nom] => Parc Lucie-Bruneau
+            [arrondissement_code3l] => ANJ
+            [adresse] => 7 051, Avenue de l’Alsace
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [8] => stdClass Object
+        (
+            [id_piscine] => 9
+            [type] => Pataugeoire
+            [nom] => Parc André-Laurendeau
+            [arrondissement_code3l] => ANJ
+            [adresse] => 8 361, Avenue André-Laurendeau
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [9] => stdClass Object
+        (
+            [id_piscine] => 10
+            [type] => Pataugeoire
+            [nom] => Parc Chénier
+            [arrondissement_code3l] => ANJ
+            [adresse] => 5 555, Avenue de l’Aréna
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [10] => stdClass Object
+        (
+            [id_piscine] => 11
+            [type] => Piscine extérieure
+            [nom] => Parc Lasalle
+            [arrondissement_code3l] => LAC
+            [adresse] => 475, 10e Avenue
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [11] => stdClass Object
+        (
+            [id_piscine] => 12
+            [type] => Piscine extérieure
+            [nom] => Parc Kirkland
+            [arrondissement_code3l] => LAC
+            [adresse] => 150, Rue des Érables
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [12] => stdClass Object
+        (
+            [id_piscine] => 13
+            [type] => Piscine extérieure
+            [nom] => Parc Duff-Court
+            [arrondissement_code3l] => LAC
+            [adresse] => 1 830, Croissant Roy
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [13] => stdClass Object
+        (
+            [id_piscine] => 14
+            [type] => Piscine extérieure
+            [nom] => Parc Dixie
+            [arrondissement_code3l] => LAC
+            [adresse] => 695, 54e Avenue
+            [propriete] => Municipale
+            [gestion] => OBNL
+        )
+
+    [14] => stdClass Object
+        (
+            [id_piscine] => 15
+            [type] => Piscine extérieure
+            [nom] => Port de Plaisance
+            [arrondissement_code3l] => LAC
+            [adresse] => 1 800, Chemin des Iroquois
+            [propriete] => Municipale
+            [gestion] => OBNL
+        )
+
+    [15] => stdClass Object
+        (
+            [id_piscine] => 16
+            [type] => Pataugeoire
+            [nom] => Parc Lasalle 1
+            [arrondissement_code3l] => LAC
+            [adresse] => 1 950, Remembrance
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [16] => stdClass Object
+        (
+            [id_piscine] => 17
+            [type] => Piscine intérieure
+            [nom] => L’Aquadôme LaSalle
+            [arrondissement_code3l] => LAS
+            [adresse] => 1 411, Rue Lapierre
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [17] => stdClass Object
+        (
+            [id_piscine] => 18
+            [type] => Piscine extérieure
+            [nom] => Parc Haymard
+            [arrondissement_code3l] => LAS
+            [adresse] => 170, Avenue Orchard
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [18] => stdClass Object
+        (
+            [id_piscine] => 19
+            [type] => Piscine extérieure
+            [nom] => Parc Lefebvre
+            [arrondissement_code3l] => LAS
+            [adresse] => 8 600, Rue Hardy
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [19] => stdClass Object
+        (
+            [id_piscine] => 20
+            [type] => Piscine extérieure
+            [nom] => Parc Leroux
+            [arrondissement_code3l] => LAS
+            [adresse] => 7 540, Rue Centrale
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [20] => stdClass Object
+        (
+            [id_piscine] => 21
+            [type] => Piscine extérieure
+            [nom] => Parc Raymond
+            [arrondissement_code3l] => LAS
+            [adresse] => 555, Boulevard Bishop-Power
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [21] => stdClass Object
+        (
+            [id_piscine] => 22
+            [type] => Piscine extérieure
+            [nom] => Parc Ouellette (natation et récréatif)
+            [arrondissement_code3l] => LAS
+            [adresse] => 1 407, Rue Serre
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [22] => stdClass Object
+        (
+            [id_piscine] => 23
+            [type] => Piscine extérieure
+            [nom] => Parc Ménard
+            [arrondissement_code3l] => LAS
+            [adresse] => 300, Rue Clément
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [23] => stdClass Object
+        (
+            [id_piscine] => 24
+            [type] => Piscine extérieure
+            [nom] => Parc Lacharité
+            [arrondissement_code3l] => LAS
+            [adresse] => 55, Avenue Latour
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [24] => stdClass Object
+        (
+            [id_piscine] => 25
+            [type] => Piscine extérieure
+            [nom] => Parc John-F-Kennedy
+            [arrondissement_code3l] => OUT
+            [adresse] => 860, Avenue Outremont
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [25] => stdClass Object
+        (
+            [id_piscine] => 26
+            [type] => Pataugeoire
+            [nom] => Parc John-F.-Kennedy
+            [arrondissement_code3l] => OUT
+            [adresse] => 860, Avenue Outremont
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [26] => stdClass Object
+        (
+            [id_piscine] => 27
+            [type] => Piscine extérieure
+            [nom] => Parc Arthur-Therrien
+            [arrondissement_code3l] => VER
+            [adresse] => 10, Rue Hickson
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [27] => stdClass Object
+        (
+            [id_piscine] => 28
+            [type] => Piscine extérieure
+            [nom] => Parc Elgar
+            [arrondissement_code3l] => VER
+            [adresse] => 260, Rue Elgar
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [28] => stdClass Object
+        (
+            [id_piscine] => 29
+            [type] => Piscine extérieure
+            [nom] => Parc de la Fontaine
+            [arrondissement_code3l] => VER
+            [adresse] => 550, Place de la Fontaine
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [29] => stdClass Object
+        (
+            [id_piscine] => 30
+            [type] => Piscine extérieure
+            [nom] => Natatorium de Verdun
+            [arrondissement_code3l] => VER
+            [adresse] => 6 500, Boulevard LaSalle
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [30] => stdClass Object
+        (
+            [id_piscine] => 31
+            [type] => Pataugeoire
+            [nom] => Parc Arthur-Therrien
+            [arrondissement_code3l] => VER
+            [adresse] => 10, Rue Hickson
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [31] => stdClass Object
+        (
+            [id_piscine] => 32
+            [type] => Pataugeoire
+            [nom] => Parc Elgar
+            [arrondissement_code3l] => VER
+            [adresse] => 260, Rue Elgar
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [32] => stdClass Object
+        (
+            [id_piscine] => 33
+            [type] => Pataugeoire
+            [nom] => Parc de la Fontaine
+            [arrondissement_code3l] => VER
+            [adresse] => 550, Place de la Fontaine
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [33] => stdClass Object
+        (
+            [id_piscine] => 34
+            [type] => Pataugeoire
+            [nom] => Natatorium de Verdun
+            [arrondissement_code3l] => VER
+            [adresse] => 6 500, Boulevard LaSalle
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+)
+
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines
 Action : POST
 Login  : 582P41:ABC123
@@ -116,25 +512,396 @@ Horaires : Array
 
 Code retour HTTP : 405
 Données brutes :
-HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines<br>QUERY_STRING : ressource=piscines<br>
+
 Données JSON décodées :
 
-2020-03-27 06:23:00 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines?code3l=OUT
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines?code3l=OUT<br>QUERY_STRING : ressource=piscines&code3l=OUT<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getPiscines() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+[{"id_piscine":"1","type":"Piscine ext\u00e9rieure","nom":"Parc Lucie-Bruneau","arrondissement_code3l":"ANJ","adresse":"7 051, Avenue de l\u2019Alsace","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"2","type":"Piscine ext\u00e9rieure","nom":"Parc Ch\u00e9nier","arrondissement_code3l":"ANJ","adresse":"5 555, Avenue de l\u2019Ar\u00e9na","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"3","type":"Piscine ext\u00e9rieure","nom":"Parc des Roseraies","arrondissement_code3l":"ANJ","adresse":"7 070, Avenue de la Nantaise","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"4","type":"Piscine ext\u00e9rieure","nom":"Parc Roger-Rousseau","arrondissement_code3l":"ANJ","adresse":"7 501, Avenue Rondeau","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"5","type":"Piscine ext\u00e9rieure","nom":"Parc Verdelle","arrondissement_code3l":"ANJ","adresse":"8 441, Place Verdelles","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"6","type":"Pataugeoire","nom":"Parc Talcy","arrondissement_code3l":"ANJ","adresse":"8 151, Avenue Talcy","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"7","type":"Pataugeoire","nom":"Parc Verdelle","arrondissement_code3l":"ANJ","adresse":"8 441, Place Verdelles","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"8","type":"Pataugeoire","nom":"Parc Lucie-Bruneau","arrondissement_code3l":"ANJ","adresse":"7 051, Avenue de l\u2019Alsace","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"9","type":"Pataugeoire","nom":"Parc Andr\u00e9-Laurendeau","arrondissement_code3l":"ANJ","adresse":"8 361, Avenue Andr\u00e9-Laurendeau","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"10","type":"Pataugeoire","nom":"Parc Ch\u00e9nier","arrondissement_code3l":"ANJ","adresse":"5 555, Avenue de l\u2019Ar\u00e9na","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"11","type":"Piscine ext\u00e9rieure","nom":"Parc Lasalle","arrondissement_code3l":"LAC","adresse":"475, 10e Avenue","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"12","type":"Piscine ext\u00e9rieure","nom":"Parc Kirkland","arrondissement_code3l":"LAC","adresse":"150, Rue des \u00c9rables","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"13","type":"Piscine ext\u00e9rieure","nom":"Parc Duff-Court","arrondissement_code3l":"LAC","adresse":"1 830, Croissant Roy","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"14","type":"Piscine ext\u00e9rieure","nom":"Parc Dixie","arrondissement_code3l":"LAC","adresse":"695, 54e Avenue","propriete":"Municipale","gestion":"OBNL"},{"id_piscine":"15","type":"Piscine ext\u00e9rieure","nom":"Port de Plaisance","arrondissement_code3l":"LAC","adresse":"1 800, Chemin des Iroquois","propriete":"Municipale","gestion":"OBNL"},{"id_piscine":"16","type":"Pataugeoire","nom":"Parc Lasalle 1","arrondissement_code3l":"LAC","adresse":"1 950, Remembrance","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"17","type":"Piscine int\u00e9rieure","nom":"L\u2019Aquad\u00f4me LaSalle","arrondissement_code3l":"LAS","adresse":"1 411, Rue Lapierre","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"18","type":"Piscine ext\u00e9rieure","nom":"Parc Haymard","arrondissement_code3l":"LAS","adresse":"170, Avenue Orchard","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"19","type":"Piscine ext\u00e9rieure","nom":"Parc Lefebvre","arrondissement_code3l":"LAS","adresse":"8 600, Rue Hardy","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"20","type":"Piscine ext\u00e9rieure","nom":"Parc Leroux","arrondissement_code3l":"LAS","adresse":"7 540, Rue Centrale","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"21","type":"Piscine ext\u00e9rieure","nom":"Parc Raymond","arrondissement_code3l":"LAS","adresse":"555, Boulevard Bishop-Power","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"22","type":"Piscine ext\u00e9rieure","nom":"Parc Ouellette (natation et r\u00e9cr\u00e9atif)","arrondissement_code3l":"LAS","adresse":"1 407, Rue Serre","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"23","type":"Piscine ext\u00e9rieure","nom":"Parc M\u00e9nard","arrondissement_code3l":"LAS","adresse":"300, Rue Cl\u00e9ment","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"24","type":"Piscine ext\u00e9rieure","nom":"Parc Lacharit\u00e9","arrondissement_code3l":"LAS","adresse":"55, Avenue Latour","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"25","type":"Piscine ext\u00e9rieure","nom":"Parc John-F-Kennedy","arrondissement_code3l":"OUT","adresse":"860, Avenue Outremont","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"26","type":"Pataugeoire","nom":"Parc John-F.-Kennedy","arrondissement_code3l":"OUT","adresse":"860, Avenue Outremont","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"27","type":"Piscine ext\u00e9rieure","nom":"Parc Arthur-Therrien","arrondissement_code3l":"VER","adresse":"10, Rue Hickson","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"28","type":"Piscine ext\u00e9rieure","nom":"Parc Elgar","arrondissement_code3l":"VER","adresse":"260, Rue Elgar","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"29","type":"Piscine ext\u00e9rieure","nom":"Parc de la Fontaine","arrondissement_code3l":"VER","adresse":"550, Place de la Fontaine","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"30","type":"Piscine ext\u00e9rieure","nom":"Natatorium de Verdun","arrondissement_code3l":"VER","adresse":"6 500, Boulevard LaSalle","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"31","type":"Pataugeoire","nom":"Parc Arthur-Therrien","arrondissement_code3l":"VER","adresse":"10, Rue Hickson","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"32","type":"Pataugeoire","nom":"Parc Elgar","arrondissement_code3l":"VER","adresse":"260, Rue Elgar","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"33","type":"Pataugeoire","nom":"Parc de la Fontaine","arrondissement_code3l":"VER","adresse":"550, Place de la Fontaine","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"34","type":"Pataugeoire","nom":"Natatorium de Verdun","arrondissement_code3l":"VER","adresse":"6 500, Boulevard LaSalle","propriete":"Municipale","gestion":"Municipale"}]
 Données JSON décodées :
+Array
+(
+    [0] => stdClass Object
+        (
+            [id_piscine] => 1
+            [type] => Piscine extérieure
+            [nom] => Parc Lucie-Bruneau
+            [arrondissement_code3l] => ANJ
+            [adresse] => 7 051, Avenue de l’Alsace
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
 
-2020-03-27 06:23:00 -----------------------------------------------------------
+    [1] => stdClass Object
+        (
+            [id_piscine] => 2
+            [type] => Piscine extérieure
+            [nom] => Parc Chénier
+            [arrondissement_code3l] => ANJ
+            [adresse] => 5 555, Avenue de l’Aréna
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [2] => stdClass Object
+        (
+            [id_piscine] => 3
+            [type] => Piscine extérieure
+            [nom] => Parc des Roseraies
+            [arrondissement_code3l] => ANJ
+            [adresse] => 7 070, Avenue de la Nantaise
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [3] => stdClass Object
+        (
+            [id_piscine] => 4
+            [type] => Piscine extérieure
+            [nom] => Parc Roger-Rousseau
+            [arrondissement_code3l] => ANJ
+            [adresse] => 7 501, Avenue Rondeau
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [4] => stdClass Object
+        (
+            [id_piscine] => 5
+            [type] => Piscine extérieure
+            [nom] => Parc Verdelle
+            [arrondissement_code3l] => ANJ
+            [adresse] => 8 441, Place Verdelles
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [5] => stdClass Object
+        (
+            [id_piscine] => 6
+            [type] => Pataugeoire
+            [nom] => Parc Talcy
+            [arrondissement_code3l] => ANJ
+            [adresse] => 8 151, Avenue Talcy
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [6] => stdClass Object
+        (
+            [id_piscine] => 7
+            [type] => Pataugeoire
+            [nom] => Parc Verdelle
+            [arrondissement_code3l] => ANJ
+            [adresse] => 8 441, Place Verdelles
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [7] => stdClass Object
+        (
+            [id_piscine] => 8
+            [type] => Pataugeoire
+            [nom] => Parc Lucie-Bruneau
+            [arrondissement_code3l] => ANJ
+            [adresse] => 7 051, Avenue de l’Alsace
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [8] => stdClass Object
+        (
+            [id_piscine] => 9
+            [type] => Pataugeoire
+            [nom] => Parc André-Laurendeau
+            [arrondissement_code3l] => ANJ
+            [adresse] => 8 361, Avenue André-Laurendeau
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [9] => stdClass Object
+        (
+            [id_piscine] => 10
+            [type] => Pataugeoire
+            [nom] => Parc Chénier
+            [arrondissement_code3l] => ANJ
+            [adresse] => 5 555, Avenue de l’Aréna
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [10] => stdClass Object
+        (
+            [id_piscine] => 11
+            [type] => Piscine extérieure
+            [nom] => Parc Lasalle
+            [arrondissement_code3l] => LAC
+            [adresse] => 475, 10e Avenue
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [11] => stdClass Object
+        (
+            [id_piscine] => 12
+            [type] => Piscine extérieure
+            [nom] => Parc Kirkland
+            [arrondissement_code3l] => LAC
+            [adresse] => 150, Rue des Érables
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [12] => stdClass Object
+        (
+            [id_piscine] => 13
+            [type] => Piscine extérieure
+            [nom] => Parc Duff-Court
+            [arrondissement_code3l] => LAC
+            [adresse] => 1 830, Croissant Roy
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [13] => stdClass Object
+        (
+            [id_piscine] => 14
+            [type] => Piscine extérieure
+            [nom] => Parc Dixie
+            [arrondissement_code3l] => LAC
+            [adresse] => 695, 54e Avenue
+            [propriete] => Municipale
+            [gestion] => OBNL
+        )
+
+    [14] => stdClass Object
+        (
+            [id_piscine] => 15
+            [type] => Piscine extérieure
+            [nom] => Port de Plaisance
+            [arrondissement_code3l] => LAC
+            [adresse] => 1 800, Chemin des Iroquois
+            [propriete] => Municipale
+            [gestion] => OBNL
+        )
+
+    [15] => stdClass Object
+        (
+            [id_piscine] => 16
+            [type] => Pataugeoire
+            [nom] => Parc Lasalle 1
+            [arrondissement_code3l] => LAC
+            [adresse] => 1 950, Remembrance
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [16] => stdClass Object
+        (
+            [id_piscine] => 17
+            [type] => Piscine intérieure
+            [nom] => L’Aquadôme LaSalle
+            [arrondissement_code3l] => LAS
+            [adresse] => 1 411, Rue Lapierre
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [17] => stdClass Object
+        (
+            [id_piscine] => 18
+            [type] => Piscine extérieure
+            [nom] => Parc Haymard
+            [arrondissement_code3l] => LAS
+            [adresse] => 170, Avenue Orchard
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [18] => stdClass Object
+        (
+            [id_piscine] => 19
+            [type] => Piscine extérieure
+            [nom] => Parc Lefebvre
+            [arrondissement_code3l] => LAS
+            [adresse] => 8 600, Rue Hardy
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [19] => stdClass Object
+        (
+            [id_piscine] => 20
+            [type] => Piscine extérieure
+            [nom] => Parc Leroux
+            [arrondissement_code3l] => LAS
+            [adresse] => 7 540, Rue Centrale
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [20] => stdClass Object
+        (
+            [id_piscine] => 21
+            [type] => Piscine extérieure
+            [nom] => Parc Raymond
+            [arrondissement_code3l] => LAS
+            [adresse] => 555, Boulevard Bishop-Power
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [21] => stdClass Object
+        (
+            [id_piscine] => 22
+            [type] => Piscine extérieure
+            [nom] => Parc Ouellette (natation et récréatif)
+            [arrondissement_code3l] => LAS
+            [adresse] => 1 407, Rue Serre
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [22] => stdClass Object
+        (
+            [id_piscine] => 23
+            [type] => Piscine extérieure
+            [nom] => Parc Ménard
+            [arrondissement_code3l] => LAS
+            [adresse] => 300, Rue Clément
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [23] => stdClass Object
+        (
+            [id_piscine] => 24
+            [type] => Piscine extérieure
+            [nom] => Parc Lacharité
+            [arrondissement_code3l] => LAS
+            [adresse] => 55, Avenue Latour
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [24] => stdClass Object
+        (
+            [id_piscine] => 25
+            [type] => Piscine extérieure
+            [nom] => Parc John-F-Kennedy
+            [arrondissement_code3l] => OUT
+            [adresse] => 860, Avenue Outremont
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [25] => stdClass Object
+        (
+            [id_piscine] => 26
+            [type] => Pataugeoire
+            [nom] => Parc John-F.-Kennedy
+            [arrondissement_code3l] => OUT
+            [adresse] => 860, Avenue Outremont
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [26] => stdClass Object
+        (
+            [id_piscine] => 27
+            [type] => Piscine extérieure
+            [nom] => Parc Arthur-Therrien
+            [arrondissement_code3l] => VER
+            [adresse] => 10, Rue Hickson
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [27] => stdClass Object
+        (
+            [id_piscine] => 28
+            [type] => Piscine extérieure
+            [nom] => Parc Elgar
+            [arrondissement_code3l] => VER
+            [adresse] => 260, Rue Elgar
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [28] => stdClass Object
+        (
+            [id_piscine] => 29
+            [type] => Piscine extérieure
+            [nom] => Parc de la Fontaine
+            [arrondissement_code3l] => VER
+            [adresse] => 550, Place de la Fontaine
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [29] => stdClass Object
+        (
+            [id_piscine] => 30
+            [type] => Piscine extérieure
+            [nom] => Natatorium de Verdun
+            [arrondissement_code3l] => VER
+            [adresse] => 6 500, Boulevard LaSalle
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [30] => stdClass Object
+        (
+            [id_piscine] => 31
+            [type] => Pataugeoire
+            [nom] => Parc Arthur-Therrien
+            [arrondissement_code3l] => VER
+            [adresse] => 10, Rue Hickson
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [31] => stdClass Object
+        (
+            [id_piscine] => 32
+            [type] => Pataugeoire
+            [nom] => Parc Elgar
+            [arrondissement_code3l] => VER
+            [adresse] => 260, Rue Elgar
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [32] => stdClass Object
+        (
+            [id_piscine] => 33
+            [type] => Pataugeoire
+            [nom] => Parc de la Fontaine
+            [arrondissement_code3l] => VER
+            [adresse] => 550, Place de la Fontaine
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [33] => stdClass Object
+        (
+            [id_piscine] => 34
+            [type] => Pataugeoire
+            [nom] => Natatorium de Verdun
+            [arrondissement_code3l] => VER
+            [adresse] => 6 500, Boulevard LaSalle
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+)
+
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements/OUT/piscines
 Action : GET
 Login  : 
@@ -152,22 +919,393 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-27 06:23:00 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines?code3l=XXX
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines?code3l=XXX<br>QUERY_STRING : ressource=piscines&code3l=XXX<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getPiscines() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+[{"id_piscine":"1","type":"Piscine ext\u00e9rieure","nom":"Parc Lucie-Bruneau","arrondissement_code3l":"ANJ","adresse":"7 051, Avenue de l\u2019Alsace","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"2","type":"Piscine ext\u00e9rieure","nom":"Parc Ch\u00e9nier","arrondissement_code3l":"ANJ","adresse":"5 555, Avenue de l\u2019Ar\u00e9na","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"3","type":"Piscine ext\u00e9rieure","nom":"Parc des Roseraies","arrondissement_code3l":"ANJ","adresse":"7 070, Avenue de la Nantaise","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"4","type":"Piscine ext\u00e9rieure","nom":"Parc Roger-Rousseau","arrondissement_code3l":"ANJ","adresse":"7 501, Avenue Rondeau","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"5","type":"Piscine ext\u00e9rieure","nom":"Parc Verdelle","arrondissement_code3l":"ANJ","adresse":"8 441, Place Verdelles","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"6","type":"Pataugeoire","nom":"Parc Talcy","arrondissement_code3l":"ANJ","adresse":"8 151, Avenue Talcy","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"7","type":"Pataugeoire","nom":"Parc Verdelle","arrondissement_code3l":"ANJ","adresse":"8 441, Place Verdelles","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"8","type":"Pataugeoire","nom":"Parc Lucie-Bruneau","arrondissement_code3l":"ANJ","adresse":"7 051, Avenue de l\u2019Alsace","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"9","type":"Pataugeoire","nom":"Parc Andr\u00e9-Laurendeau","arrondissement_code3l":"ANJ","adresse":"8 361, Avenue Andr\u00e9-Laurendeau","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"10","type":"Pataugeoire","nom":"Parc Ch\u00e9nier","arrondissement_code3l":"ANJ","adresse":"5 555, Avenue de l\u2019Ar\u00e9na","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"11","type":"Piscine ext\u00e9rieure","nom":"Parc Lasalle","arrondissement_code3l":"LAC","adresse":"475, 10e Avenue","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"12","type":"Piscine ext\u00e9rieure","nom":"Parc Kirkland","arrondissement_code3l":"LAC","adresse":"150, Rue des \u00c9rables","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"13","type":"Piscine ext\u00e9rieure","nom":"Parc Duff-Court","arrondissement_code3l":"LAC","adresse":"1 830, Croissant Roy","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"14","type":"Piscine ext\u00e9rieure","nom":"Parc Dixie","arrondissement_code3l":"LAC","adresse":"695, 54e Avenue","propriete":"Municipale","gestion":"OBNL"},{"id_piscine":"15","type":"Piscine ext\u00e9rieure","nom":"Port de Plaisance","arrondissement_code3l":"LAC","adresse":"1 800, Chemin des Iroquois","propriete":"Municipale","gestion":"OBNL"},{"id_piscine":"16","type":"Pataugeoire","nom":"Parc Lasalle 1","arrondissement_code3l":"LAC","adresse":"1 950, Remembrance","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"17","type":"Piscine int\u00e9rieure","nom":"L\u2019Aquad\u00f4me LaSalle","arrondissement_code3l":"LAS","adresse":"1 411, Rue Lapierre","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"18","type":"Piscine ext\u00e9rieure","nom":"Parc Haymard","arrondissement_code3l":"LAS","adresse":"170, Avenue Orchard","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"19","type":"Piscine ext\u00e9rieure","nom":"Parc Lefebvre","arrondissement_code3l":"LAS","adresse":"8 600, Rue Hardy","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"20","type":"Piscine ext\u00e9rieure","nom":"Parc Leroux","arrondissement_code3l":"LAS","adresse":"7 540, Rue Centrale","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"21","type":"Piscine ext\u00e9rieure","nom":"Parc Raymond","arrondissement_code3l":"LAS","adresse":"555, Boulevard Bishop-Power","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"22","type":"Piscine ext\u00e9rieure","nom":"Parc Ouellette (natation et r\u00e9cr\u00e9atif)","arrondissement_code3l":"LAS","adresse":"1 407, Rue Serre","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"23","type":"Piscine ext\u00e9rieure","nom":"Parc M\u00e9nard","arrondissement_code3l":"LAS","adresse":"300, Rue Cl\u00e9ment","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"24","type":"Piscine ext\u00e9rieure","nom":"Parc Lacharit\u00e9","arrondissement_code3l":"LAS","adresse":"55, Avenue Latour","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"25","type":"Piscine ext\u00e9rieure","nom":"Parc John-F-Kennedy","arrondissement_code3l":"OUT","adresse":"860, Avenue Outremont","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"26","type":"Pataugeoire","nom":"Parc John-F.-Kennedy","arrondissement_code3l":"OUT","adresse":"860, Avenue Outremont","propriete":"Municipale","gestion":"Priv\u00e9"},{"id_piscine":"27","type":"Piscine ext\u00e9rieure","nom":"Parc Arthur-Therrien","arrondissement_code3l":"VER","adresse":"10, Rue Hickson","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"28","type":"Piscine ext\u00e9rieure","nom":"Parc Elgar","arrondissement_code3l":"VER","adresse":"260, Rue Elgar","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"29","type":"Piscine ext\u00e9rieure","nom":"Parc de la Fontaine","arrondissement_code3l":"VER","adresse":"550, Place de la Fontaine","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"30","type":"Piscine ext\u00e9rieure","nom":"Natatorium de Verdun","arrondissement_code3l":"VER","adresse":"6 500, Boulevard LaSalle","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"31","type":"Pataugeoire","nom":"Parc Arthur-Therrien","arrondissement_code3l":"VER","adresse":"10, Rue Hickson","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"32","type":"Pataugeoire","nom":"Parc Elgar","arrondissement_code3l":"VER","adresse":"260, Rue Elgar","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"33","type":"Pataugeoire","nom":"Parc de la Fontaine","arrondissement_code3l":"VER","adresse":"550, Place de la Fontaine","propriete":"Municipale","gestion":"Municipale"},{"id_piscine":"34","type":"Pataugeoire","nom":"Natatorium de Verdun","arrondissement_code3l":"VER","adresse":"6 500, Boulevard LaSalle","propriete":"Municipale","gestion":"Municipale"}]
 Données JSON décodées :
+Array
+(
+    [0] => stdClass Object
+        (
+            [id_piscine] => 1
+            [type] => Piscine extérieure
+            [nom] => Parc Lucie-Bruneau
+            [arrondissement_code3l] => ANJ
+            [adresse] => 7 051, Avenue de l’Alsace
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
 
-2020-03-27 06:23:00 -----------------------------------------------------------
+    [1] => stdClass Object
+        (
+            [id_piscine] => 2
+            [type] => Piscine extérieure
+            [nom] => Parc Chénier
+            [arrondissement_code3l] => ANJ
+            [adresse] => 5 555, Avenue de l’Aréna
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [2] => stdClass Object
+        (
+            [id_piscine] => 3
+            [type] => Piscine extérieure
+            [nom] => Parc des Roseraies
+            [arrondissement_code3l] => ANJ
+            [adresse] => 7 070, Avenue de la Nantaise
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [3] => stdClass Object
+        (
+            [id_piscine] => 4
+            [type] => Piscine extérieure
+            [nom] => Parc Roger-Rousseau
+            [arrondissement_code3l] => ANJ
+            [adresse] => 7 501, Avenue Rondeau
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [4] => stdClass Object
+        (
+            [id_piscine] => 5
+            [type] => Piscine extérieure
+            [nom] => Parc Verdelle
+            [arrondissement_code3l] => ANJ
+            [adresse] => 8 441, Place Verdelles
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [5] => stdClass Object
+        (
+            [id_piscine] => 6
+            [type] => Pataugeoire
+            [nom] => Parc Talcy
+            [arrondissement_code3l] => ANJ
+            [adresse] => 8 151, Avenue Talcy
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [6] => stdClass Object
+        (
+            [id_piscine] => 7
+            [type] => Pataugeoire
+            [nom] => Parc Verdelle
+            [arrondissement_code3l] => ANJ
+            [adresse] => 8 441, Place Verdelles
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [7] => stdClass Object
+        (
+            [id_piscine] => 8
+            [type] => Pataugeoire
+            [nom] => Parc Lucie-Bruneau
+            [arrondissement_code3l] => ANJ
+            [adresse] => 7 051, Avenue de l’Alsace
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [8] => stdClass Object
+        (
+            [id_piscine] => 9
+            [type] => Pataugeoire
+            [nom] => Parc André-Laurendeau
+            [arrondissement_code3l] => ANJ
+            [adresse] => 8 361, Avenue André-Laurendeau
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [9] => stdClass Object
+        (
+            [id_piscine] => 10
+            [type] => Pataugeoire
+            [nom] => Parc Chénier
+            [arrondissement_code3l] => ANJ
+            [adresse] => 5 555, Avenue de l’Aréna
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [10] => stdClass Object
+        (
+            [id_piscine] => 11
+            [type] => Piscine extérieure
+            [nom] => Parc Lasalle
+            [arrondissement_code3l] => LAC
+            [adresse] => 475, 10e Avenue
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [11] => stdClass Object
+        (
+            [id_piscine] => 12
+            [type] => Piscine extérieure
+            [nom] => Parc Kirkland
+            [arrondissement_code3l] => LAC
+            [adresse] => 150, Rue des Érables
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [12] => stdClass Object
+        (
+            [id_piscine] => 13
+            [type] => Piscine extérieure
+            [nom] => Parc Duff-Court
+            [arrondissement_code3l] => LAC
+            [adresse] => 1 830, Croissant Roy
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [13] => stdClass Object
+        (
+            [id_piscine] => 14
+            [type] => Piscine extérieure
+            [nom] => Parc Dixie
+            [arrondissement_code3l] => LAC
+            [adresse] => 695, 54e Avenue
+            [propriete] => Municipale
+            [gestion] => OBNL
+        )
+
+    [14] => stdClass Object
+        (
+            [id_piscine] => 15
+            [type] => Piscine extérieure
+            [nom] => Port de Plaisance
+            [arrondissement_code3l] => LAC
+            [adresse] => 1 800, Chemin des Iroquois
+            [propriete] => Municipale
+            [gestion] => OBNL
+        )
+
+    [15] => stdClass Object
+        (
+            [id_piscine] => 16
+            [type] => Pataugeoire
+            [nom] => Parc Lasalle 1
+            [arrondissement_code3l] => LAC
+            [adresse] => 1 950, Remembrance
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [16] => stdClass Object
+        (
+            [id_piscine] => 17
+            [type] => Piscine intérieure
+            [nom] => L’Aquadôme LaSalle
+            [arrondissement_code3l] => LAS
+            [adresse] => 1 411, Rue Lapierre
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [17] => stdClass Object
+        (
+            [id_piscine] => 18
+            [type] => Piscine extérieure
+            [nom] => Parc Haymard
+            [arrondissement_code3l] => LAS
+            [adresse] => 170, Avenue Orchard
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [18] => stdClass Object
+        (
+            [id_piscine] => 19
+            [type] => Piscine extérieure
+            [nom] => Parc Lefebvre
+            [arrondissement_code3l] => LAS
+            [adresse] => 8 600, Rue Hardy
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [19] => stdClass Object
+        (
+            [id_piscine] => 20
+            [type] => Piscine extérieure
+            [nom] => Parc Leroux
+            [arrondissement_code3l] => LAS
+            [adresse] => 7 540, Rue Centrale
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [20] => stdClass Object
+        (
+            [id_piscine] => 21
+            [type] => Piscine extérieure
+            [nom] => Parc Raymond
+            [arrondissement_code3l] => LAS
+            [adresse] => 555, Boulevard Bishop-Power
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [21] => stdClass Object
+        (
+            [id_piscine] => 22
+            [type] => Piscine extérieure
+            [nom] => Parc Ouellette (natation et récréatif)
+            [arrondissement_code3l] => LAS
+            [adresse] => 1 407, Rue Serre
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [22] => stdClass Object
+        (
+            [id_piscine] => 23
+            [type] => Piscine extérieure
+            [nom] => Parc Ménard
+            [arrondissement_code3l] => LAS
+            [adresse] => 300, Rue Clément
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [23] => stdClass Object
+        (
+            [id_piscine] => 24
+            [type] => Piscine extérieure
+            [nom] => Parc Lacharité
+            [arrondissement_code3l] => LAS
+            [adresse] => 55, Avenue Latour
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [24] => stdClass Object
+        (
+            [id_piscine] => 25
+            [type] => Piscine extérieure
+            [nom] => Parc John-F-Kennedy
+            [arrondissement_code3l] => OUT
+            [adresse] => 860, Avenue Outremont
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [25] => stdClass Object
+        (
+            [id_piscine] => 26
+            [type] => Pataugeoire
+            [nom] => Parc John-F.-Kennedy
+            [arrondissement_code3l] => OUT
+            [adresse] => 860, Avenue Outremont
+            [propriete] => Municipale
+            [gestion] => Privé
+        )
+
+    [26] => stdClass Object
+        (
+            [id_piscine] => 27
+            [type] => Piscine extérieure
+            [nom] => Parc Arthur-Therrien
+            [arrondissement_code3l] => VER
+            [adresse] => 10, Rue Hickson
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [27] => stdClass Object
+        (
+            [id_piscine] => 28
+            [type] => Piscine extérieure
+            [nom] => Parc Elgar
+            [arrondissement_code3l] => VER
+            [adresse] => 260, Rue Elgar
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [28] => stdClass Object
+        (
+            [id_piscine] => 29
+            [type] => Piscine extérieure
+            [nom] => Parc de la Fontaine
+            [arrondissement_code3l] => VER
+            [adresse] => 550, Place de la Fontaine
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [29] => stdClass Object
+        (
+            [id_piscine] => 30
+            [type] => Piscine extérieure
+            [nom] => Natatorium de Verdun
+            [arrondissement_code3l] => VER
+            [adresse] => 6 500, Boulevard LaSalle
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [30] => stdClass Object
+        (
+            [id_piscine] => 31
+            [type] => Pataugeoire
+            [nom] => Parc Arthur-Therrien
+            [arrondissement_code3l] => VER
+            [adresse] => 10, Rue Hickson
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [31] => stdClass Object
+        (
+            [id_piscine] => 32
+            [type] => Pataugeoire
+            [nom] => Parc Elgar
+            [arrondissement_code3l] => VER
+            [adresse] => 260, Rue Elgar
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [32] => stdClass Object
+        (
+            [id_piscine] => 33
+            [type] => Pataugeoire
+            [nom] => Parc de la Fontaine
+            [arrondissement_code3l] => VER
+            [adresse] => 550, Place de la Fontaine
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+    [33] => stdClass Object
+        (
+            [id_piscine] => 34
+            [type] => Pataugeoire
+            [nom] => Natatorium de Verdun
+            [arrondissement_code3l] => VER
+            [adresse] => 6 500, Boulevard LaSalle
+            [propriete] => Municipale
+            [gestion] => Municipale
+        )
+
+)
+
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements/XXX/piscines
 Action : GET
 Login  : 
@@ -185,22 +1323,26 @@ Données brutes :
 
 Données JSON décodées :
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/10
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/10<br>QUERY_STRING : ressource=piscines&id=10<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getPiscine() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+{"id_piscine":"10","type":"Pataugeoire","nom":"Parc Ch\u00e9nier","arrondissement_code3l":"ANJ","adresse":"5 555, Avenue de l\u2019Ar\u00e9na","propriete":"Municipale","gestion":"Priv\u00e9"}
 Données JSON décodées :
+stdClass Object
+(
+    [id_piscine] => 10
+    [type] => Pataugeoire
+    [nom] => Parc Chénier
+    [arrondissement_code3l] => ANJ
+    [adresse] => 5 555, Avenue de l’Aréna
+    [propriete] => Municipale
+    [gestion] => Privé
+)
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/10
 Action : POST
 Login  : 582P41:ABC123
@@ -210,94 +1352,76 @@ Horaires : Array
 
 Code retour HTTP : 405
 Données brutes :
-HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/10<br>QUERY_STRING : ressource=piscines&id=10<br>
+
 Données JSON décodées :
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/100
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/100<br>QUERY_STRING : ressource=piscines&id=100<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getPiscine() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+false
 Données JSON décodées :
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/10/xxx
 Action : GET
 Login  : 
 Code retour HTTP : 400
 Données brutes :
-HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/10/xxx<br>QUERY_STRING : ressource=piscines&id=10&action=xxx<br>
+
 Données JSON décodées :
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+[]
 Données JSON décodées :
+Array
+(
+)
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/100/horaires
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/100/horaires<br>QUERY_STRING : ressource=piscines&id=100&action=horaires<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+[]
 Données JSON décodées :
+Array
+(
+)
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires?date=20180503
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires?date=20180503<br>QUERY_STRING : ressource=piscines&id=1&action=horaires&date=20180503<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+[]
 Données JSON décodées :
+Array
+(
+)
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires?date=XXX
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires?date=XXX<br>QUERY_STRING : ressource=piscines&id=1&action=horaires&date=XXX<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+[]
 Données JSON décodées :
+Array
+(
+)
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : POST
 Login  : 582P41:badpassword
@@ -323,10 +1447,10 @@ Horaires : Array
 
 Code retour HTTP : 401
 Données brutes :
-HTTP_AUTHORIZATION : Basic NTgyUDQxOmJhZHBhc3N3b3Jk</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br>
+
 Données JSON décodées :
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : POST
 Login  : 582P41:ABC123
@@ -352,16 +1476,10 @@ Horaires : Array
 
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::postHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+truetrue
 Données JSON décodées :
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : POST
 Login  : 582P41:ABC123
@@ -385,18 +1503,12 @@ Horaires : Array
 
 )
 
-Code retour HTTP : 200
+Code retour HTTP : 500
 Données brutes :
-HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::postHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '1-2' pour la clef 'PRIMARY'
 Données JSON décodées :
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : POST
 Login  : 582P41:ABC123
@@ -420,57 +1532,64 @@ Horaires : Array
 
 )
 
-Code retour HTTP : 200
+Code retour HTTP : 500
 Données brutes :
-HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::postHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicata du champ '1-2' pour la clef 'PRIMARY'
 Données JSON décodées :
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+[{"id_piscine":"1","jour":"2","debut":"10:30:00","fin":"19:10:00"},{"id_piscine":"2","jour":"4","debut":"12:30:00","fin":"22:10:00"}]
 Données JSON décodées :
+Array
+(
+    [0] => stdClass Object
+        (
+            [id_piscine] => 1
+            [jour] => 2
+            [debut] => 10:30:00
+            [fin] => 19:10:00
+        )
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+    [1] => stdClass Object
+        (
+            [id_piscine] => 2
+            [jour] => 4
+            [debut] => 12:30:00
+            [fin] => 22:10:00
+        )
+
+)
+
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : DELETE
 Login  : baduser:badpassword
 Code retour HTTP : 401
 Données brutes :
-HTTP_AUTHORIZATION : Basic YmFkdXNlcjpiYWRwYXNzd29yZA==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : DELETE<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br>
+
 Données JSON décodées :
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/arrondissements
 Action : DELETE
 Login  : 582P41:ABC123
 Code retour HTTP : 405
 Données brutes :
-HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : DELETE<br>REQUEST_URI : /pwd3-tp1/wspiscine/arrondissements<br>QUERY_STRING : ressource=arrondissements<br>
+
 Données JSON décodées :
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : DELETE
 Login  : 582P41:ABC123
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : DELETE<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
+<br />
 <b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::deleteHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
 Stack trace:
 #0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
@@ -479,7 +1598,7 @@ Stack trace:
 
 Données JSON décodées :
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : POST
 Login  : 582P41:ABC123
@@ -505,27 +1624,50 @@ Horaires : Array
 
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : Basic NTgyUDQxOkFCQzEyMw==</br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : POST<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::postHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+truetrue
 Données JSON décodées :
 
-2020-03-27 06:23:01 -----------------------------------------------------------
+2020-03-29 04:28:10 -----------------------------------------------------------
 URL    : http://localhost/pwd3-tp1/wspiscine/piscines/1/horaires
 Action : GET
 Login  : 
 Code retour HTTP : 200
 Données brutes :
-HTTP_AUTHORIZATION : </br>SERVER_PROTOCOL : HTTP/1.1<br>REQUEST_METHOD : GET<br>REQUEST_URI : /pwd3-tp1/wspiscine/piscines/1/horaires<br>QUERY_STRING : ressource=piscines&id=1&action=horaires<br><br />
-<b>Fatal error</b>:  Uncaught Error: Call to undefined method Controleur::getHoraire() in C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php:67
-Stack trace:
-#0 C:\wamp64\www\PWD3-TP1\wspiscine\index.php(20): Controleur-&gt;__construct()
-#1 {main}
-  thrown in <b>C:\wamp64\www\PWD3-TP1\wspiscine\lib\Controleur.class.php</b> on line <b>67</b><br />
-
+[{"id_piscine":"1","jour":"0","debut":"08:00:00","fin":"16:00:00"},{"id_piscine":"1","jour":"2","debut":"10:30:00","fin":"19:10:00"},{"id_piscine":"1","jour":"4","debut":"09:00:00","fin":"11:00:00"},{"id_piscine":"2","jour":"4","debut":"12:30:00","fin":"22:10:00"}]
 Données JSON décodées :
+Array
+(
+    [0] => stdClass Object
+        (
+            [id_piscine] => 1
+            [jour] => 0
+            [debut] => 08:00:00
+            [fin] => 16:00:00
+        )
+
+    [1] => stdClass Object
+        (
+            [id_piscine] => 1
+            [jour] => 2
+            [debut] => 10:30:00
+            [fin] => 19:10:00
+        )
+
+    [2] => stdClass Object
+        (
+            [id_piscine] => 1
+            [jour] => 4
+            [debut] => 09:00:00
+            [fin] => 11:00:00
+        )
+
+    [3] => stdClass Object
+        (
+            [id_piscine] => 2
+            [jour] => 4
+            [debut] => 12:30:00
+            [fin] => 22:10:00
+        )
+
+)
 

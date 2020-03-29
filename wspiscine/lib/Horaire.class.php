@@ -17,11 +17,12 @@ class Horaire
      * Constructeur de la classe 
      *
      */
-    public function __construct($id_piscine = null, $jour = null, $debut = 0)
+    public function __construct($id_piscine = null, $jour = null, $debut = 0, $fin = 0)
     {
-        $this->setid_piscine($id_piscine);
-        $this->setjour($jour);
-        $this->setdebut($debut);
+        $this->setId_piscine($id_piscine);
+        $this->setJour($jour);
+        $this->setDebut($debut);
+        $this->setFin($fin);
     }
 
     /**
@@ -127,7 +128,7 @@ class Horaire
     public function setId_piscine($id_piscine = null)
     {
         unset($this->erreurs['id_piscine']);
-        if ($id_piscine !== null &&  is_int($id_piscine)) {
+        if ($id_piscine !== null && is_int($id_piscine)) {
             $this->id_piscine = $id_piscine;
         } else {
             $this->erreurs['id_piscine'] = true;
@@ -143,12 +144,13 @@ class Horaire
     public function setJour($jour = null)
     {
         unset($this->erreurs['jour']);
-        $jour = trim($jour);
+
         if ($jour !== null && is_int($jour)) {
             $this->jour = $jour;
         } else {
             $this->erreurs['jour'] = true;
         }
+
         return $this;
     }
 

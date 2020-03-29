@@ -24,7 +24,7 @@ class Controleur
             'GET' => 'getPiscine'
         ),
         "piscines/:id/horaires" => array(
-            'GET' => 'getHoraire',
+            'GET' => 'getHoraires',
             'POST' => 'postHoraire',
             'DELETE' => 'deleteHoraire'
         ),
@@ -150,34 +150,38 @@ class Controleur
      * @param void
      * @return
      */
-    private function getHoraires($id)
+    private function getHoraires()
     {
         $req = new RequetesPDO();
         if (isset($_GET['date'])) {
-            $liste = $req->getHoraireParDate($id, $_GET['date']);
+            $liste = $req->getHoraireParDate($this->id, $_GET['date']);
         } else {
-            $liste = $req->getHoraires($id);
+            $liste = $req->getHoraires($this->id);
         }
         echo json_encode($liste);
-    } 
-    //  /**
-    //  * Ajout d'un livre
-    //  * @param void
-    //  * @return
-    //  */
-    // private function postLivre()
-    // {
-    //     $req = new RequetesPDO();
-    //     // Trace::writeLog(json_decode($_POST['livre']), true));
-    //     $livre = (array) json_decode($_POST['livre']); // ou : $livre = json_decode($_POST['livre'], true); 
-    //     $oLivre = new Piscine(...array_values($livre));
-    //     if (count($oLivre->erreurs) === 0) {
-    //         $codeRetour = $req->ajouterLivre(...array_values($livre));
-    //         echo json_encode($codeRetour);
-    //     } else {
-    //         echo json_encode(["erreurs de données" => $oLivre->erreurs]);
-    //     }
-    // }
+    }
+
+    /**
+     * Ajout d'un horaire
+     * @param void
+     * @return
+     */
+    private function postHoraire()
+    {
+        $req = new RequetesPDO();
+        $horaires = json_decode($_POST['horaires'], true);
+        // var_dump($horaires);
+        foreach ($horaires as $horaire) {
+            $oHoraire = new Horaire(...array_values($horaire));
+            if (count($oHoraire->erreurs) === 0) {
+                $codeRetour = $req->ajouterHoraire(...array_values($horaire));
+                echo json_encode($codeRetour);
+            } else {
+                echo json_encode(["erreurs de données" => $oHoraire->erreurs]);
+            }
+            // var_dump($oHoraire);
+        }
+    }
 
     // /**
     //  * Modifier le livre d'id $_GET['id']

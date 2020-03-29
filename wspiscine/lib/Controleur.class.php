@@ -170,10 +170,23 @@ class Controleur
     {
         $req = new RequetesPDO();
         $horaires = json_decode($_POST['horaires'], true);
-        // var_dump($horaires);
+        $liste = $req->getHoraires($this->id);
+        var_dump($liste);
+        var_dump($horaires);
+        // exit;
+
         foreach ($horaires as $horaire) {
             $oHoraire = new Horaire(...array_values($horaire));
             if (count($oHoraire->erreurs) === 0) {
+                foreach ($liste as $item) {
+                    echo $horaire["id_piscine"] . " - " . $item["id_piscine"] . "<br>";
+                    echo $horaire["jour"] . " - " . $item["jour"] . "<br>";
+                    if ($horaire["id_piscine"] == $item["id_piscine"] && $horaire["jour"] == $item["jour"]) {
+                        $codeRetour = $req->modifierHoraire(...array_values($horaire));
+                        echo json_encode($codeRetour);
+                        exit;
+                    }
+                }
                 $codeRetour = $req->ajouterHoraire(...array_values($horaire));
                 echo json_encode($codeRetour);
             } else {

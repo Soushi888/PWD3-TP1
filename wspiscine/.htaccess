@@ -1,11 +1,11 @@
 
 RewriteEngine On
 
-RewriteBase /pwd3-tp1/wspiscine
+RewriteBase /wspiscine
 
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 
 RewriteRule ^([a-z]+)\/?$ index.php?ressource=$1&%{QUERY_STRING} [L]
-RewriteRule ^([a-z]+)/([0-9]+)\/?$ index.php?ressource=$1&id=$2&%{QUERY_STRING} [L]
+RewriteRule ^([a-z]+)/(([0-9]+)|([a-zA-Z]{3}))\/?$ index.php?ressource=$1&id=$2&%{QUERY_STRING} [L]
 RewriteRule ^([a-z]+)/([0-9]+)/([a-z]+)\/?$ index.php?ressource=$1&id=$2&action=$3&%{QUERY_STRING} [L]
 
